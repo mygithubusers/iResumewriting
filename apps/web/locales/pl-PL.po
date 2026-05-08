@@ -2366,11 +2366,6 @@ msgstr "Prostokąt"
 msgid "Rectangle (Full Width)"
 msgstr "Prostokąt (pełna szerokość)"
 
-#: src/routes/builder/$resumeId/-components/dock.tsx
-msgctxt "'Ctrl' may be replaced with the locale-specific equivalent (e.g. 'Strg' for QWERTZ layouts)."
-msgid "Redo (Ctrl+Y)"
-msgstr "Ponów (Ctrl+Y)"
-
 #: src/dialogs/resume/sections/custom.tsx
 #: src/libs/resume/section-title.ts
 #: src/libs/resume/section.tsx
@@ -3038,6 +3033,10 @@ msgstr "Aby usunąć konto, wpisz tekst potwierdzający i kliknij przycisk poni�
 msgid "Toggle left sidebar"
 msgstr "Przełączanie lewego paska bocznego"
 
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Toggle page stacking"
+msgstr ""
+
 #. Screen-reader label for opening or closing the right sidebar in resume builder
 #: src/routes/builder/$resumeId/-components/header.tsx
 msgid "Toggle right sidebar"
@@ -3140,11 +3139,6 @@ msgstr "Ukraiński"
 #: src/components/input/rich-input.tsx
 msgid "Underline"
 msgstr "Podkreślenie"
-
-#: src/routes/builder/$resumeId/-components/dock.tsx
-msgctxt "'Ctrl' may be replaced with the locale-specific equivalent (e.g. 'Strg' for QWERTZ layouts)."
-msgid "Undo (Ctrl+Z)"
-msgstr "Cofnij (Ctrl+Z)"
 
 #: src/routes/_home/-sections/features.tsx
 msgid "Unlimited Resumes"
@@ -3501,4 +3495,3 @@ msgstr "Pomniejsz"
 #: src/libs/locale.ts
 msgid "Zulu"
 msgstr "Zulu"
-

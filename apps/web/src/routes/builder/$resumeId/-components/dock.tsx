@@ -1,8 +1,9 @@
 import type { Icon } from "@phosphor-icons/react";
+import type { BuilderPreviewPageLayout } from "./page-layout";
 import { t } from "@lingui/core/macro";
 import {
-	ArrowUUpLeftIcon,
-	ArrowUUpRightIcon,
+	AlignCenterHorizontalIcon,
+	AlignTopIcon,
 	CircleNotchIcon,
 	CubeFocusIcon,
 	FileDocIcon,
@@ -12,7 +13,6 @@ import {
 	MagnifyingGlassMinusIcon,
 	MagnifyingGlassPlusIcon,
 } from "@phosphor-icons/react";
-import { useHotkeys } from "@tanstack/react-hotkeys";
 import { motion } from "motion/react";
 import { useCallback, useMemo, useState } from "react";
 import { useControls } from "react-zoom-pan-pinch";
@@ -23,11 +23,16 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@reactive-resume/ui/com
 import { downloadWithAnchor, generateFilename } from "@reactive-resume/utils/file";
 import { buildDocx } from "@reactive-resume/utils/resume/docx";
 import { cn } from "@reactive-resume/utils/style";
-import { useCurrentResume, useResumeHistory } from "@/components/resume/use-resume";
+import { useCurrentResume } from "@/components/resume/use-resume";
 import { authClient } from "@/libs/auth/client";
 import { createResumePdfBlob } from "@/libs/resume/pdf-document";
 
-export function BuilderDock() {
+type BuilderDockProps = {
+	pageLayout: BuilderPreviewPageLayout;
+	onTogglePageLayout: () => void;
+};
+
+export function BuilderDock({ pageLayout, onTogglePageLayout }: BuilderDockProps) {
 	const { data: session } = authClient.useSession();
 	const resume = useCurrentResume();
 
@@ -35,13 +40,6 @@ export function BuilderDock() {
 	const { zoomIn, zoomOut, centerView } = useControls();
 
 	const [isPrinting, setIsPrinting] = useState(false);
-
-	const { undo, redo, canUndo, canRedo } = useResumeHistory();
-
-	useHotkeys([
-		{ hotkey: "Mod+Z", callback: () => undo() },
-		{ hotkey: "Mod+Y", callback: () => redo() },
-	]);
 
 	const publicUrl = useMemo(() => {
 		if (!session?.user.username || !resume?.slug) return "";
@@ -102,28 +100,14 @@ export function BuilderDock() {
 				transition={{ duration: 0.2, ease: "easeOut" }}
 				className="flex items-center rounded-r-full rounded-l-full bg-popover px-2 shadow-xl will-change-[transform,opacity]"
 			>
-				<DockIcon
-					disabled={!canUndo}
-					onClick={() => undo()}
-					icon={ArrowUUpLeftIcon}
-					title={t({
-						context: "'Ctrl' may be replaced with the locale-specific equivalent (e.g. 'Strg' for QWERTZ layouts).",
-						message: "Undo (Ctrl+Z)",
-					})}
-				/>
-				<DockIcon
-					disabled={!canRedo}
-					onClick={() => redo()}
-					icon={ArrowUUpRightIcon}
-					title={t({
-						context: "'Ctrl' may be replaced with the locale-specific equivalent (e.g. 'Strg' for QWERTZ layouts).",
-						message: "Redo (Ctrl+Y)",
-					})}
-				/>
-				<div className="mx-1 h-8 w-px bg-border" />
 				<DockIcon icon={MagnifyingGlassPlusIcon} title={t`Zoom in`} onClick={() => zoomIn(0.1)} />
 				<DockIcon icon={MagnifyingGlassMinusIcon} title={t`Zoom out`} onClick={() => zoomOut(0.1)} />
 				<DockIcon icon={CubeFocusIcon} title={t`Center view`} onClick={() => centerView()} />
+				<DockIcon
+					icon={pageLayout === "horizontal" ? AlignTopIcon : AlignCenterHorizontalIcon}
+					title={t`Toggle page stacking`}
+					onClick={onTogglePageLayout}
+				/>
 				<div className="mx-1 h-8 w-px bg-border" />
 				<DockIcon icon={LinkSimpleIcon} title={t`Copy URL`} onClick={() => onCopyUrl()} />
 				<DockIcon icon={FileJsIcon} title={t`Download JSON`} onClick={() => onDownloadJSON()} />

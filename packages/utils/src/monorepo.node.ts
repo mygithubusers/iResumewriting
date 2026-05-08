@@ -1,11 +1,18 @@
-import { realpathSync } from "node:fs";
+import { existsSync, realpathSync } from "node:fs";
 import { dirname, join } from "node:path";
-import { findUpSync } from "find-up";
 
 export const findWorkspaceRoot = (cwd = process.cwd()) => {
-	const workspaceManifestPath = findUpSync("pnpm-workspace.yaml", { cwd: realpathSync(cwd) });
+	let currentDirectory = realpathSync(cwd);
 
-	return workspaceManifestPath ? dirname(workspaceManifestPath) : null;
+	while (true) {
+		const workspaceManifestPath = join(currentDirectory, "pnpm-workspace.yaml");
+		if (existsSync(workspaceManifestPath)) return currentDirectory;
+
+		const parentDirectory = dirname(currentDirectory);
+		if (parentDirectory === currentDirectory) return null;
+
+		currentDirectory = parentDirectory;
+	}
 };
 
 export const getLocalDataDirectory = (cwd = process.cwd()) => {

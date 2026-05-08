@@ -2361,11 +2361,6 @@ msgstr ""
 msgid "Rectangle (Full Width)"
 msgstr ""
 
-#: src/routes/builder/$resumeId/-components/dock.tsx
-msgctxt "'Ctrl' may be replaced with the locale-specific equivalent (e.g. 'Strg' for QWERTZ layouts)."
-msgid "Redo (Ctrl+Y)"
-msgstr ""
-
 #: src/dialogs/resume/sections/custom.tsx
 #: src/libs/resume/section-title.ts
 #: src/libs/resume/section.tsx
@@ -3033,6 +3028,10 @@ msgstr ""
 msgid "Toggle left sidebar"
 msgstr ""
 
+#: src/routes/builder/$resumeId/-components/dock.tsx
+msgid "Toggle page stacking"
+msgstr ""
+
 #. Screen-reader label for opening or closing the right sidebar in resume builder
 #: src/routes/builder/$resumeId/-components/header.tsx
 msgid "Toggle right sidebar"
@@ -3134,11 +3133,6 @@ msgstr ""
 
 #: src/components/input/rich-input.tsx
 msgid "Underline"
-msgstr ""
-
-#: src/routes/builder/$resumeId/-components/dock.tsx
-msgctxt "'Ctrl' may be replaced with the locale-specific equivalent (e.g. 'Strg' for QWERTZ layouts)."
-msgid "Undo (Ctrl+Z)"
 msgstr ""
 
 #: src/routes/_home/-sections/features.tsx

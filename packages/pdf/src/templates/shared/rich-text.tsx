@@ -5,6 +5,10 @@ import { useTemplateStyle } from "./context";
 import { safeTextStyle } from "./primitives";
 import { composeStyles, mergeLinkStyles, mergeStyles } from "./styles";
 
+const richListItemContentStackStyle = {
+	flexDirection: "column",
+} satisfies Style;
+
 export const RichText = ({ children }: { children: string }) => {
 	const boldStyle = useTemplateStyle("bold");
 	const linkStyle = useTemplateStyle("link");
@@ -29,7 +33,16 @@ export const RichText = ({ children }: { children: string }) => {
 					return (
 						<View style={composeStyles(richListItemRowStyle)}>
 							<PdfText style={composeStyles(richListItemMarkerStyle)}>{marker}</PdfText>
-							<PdfText style={composeStyles(richListItemContentStyle, ...itemStyle, safeTextStyle)}>{children}</PdfText>
+							<View
+								style={composeStyles(
+									richListItemContentStyle,
+									...itemStyle,
+									richListItemContentStackStyle,
+									safeTextStyle,
+								)}
+							>
+								{children}
+							</View>
 						</View>
 					);
 				},

@@ -1,7 +1,6 @@
 import type { ResumeData } from "@reactive-resume/schema/resume/data";
 import type { QueryClient, QueryKey } from "@tanstack/react-query";
 import type { WritableDraft } from "immer";
-import type { TemporalState } from "zundo";
 import { t } from "@lingui/core/macro";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useParams } from "@tanstack/react-router";
@@ -12,7 +11,6 @@ import { toast } from "sonner";
 import { temporal } from "zundo";
 import { immer } from "zustand/middleware/immer";
 import { create } from "zustand/react";
-import { useStoreWithEqualityFn } from "zustand/traditional";
 import { orpc } from "@/libs/orpc/client";
 
 type Resume = {
@@ -220,10 +218,6 @@ export const useResumeStore = create<ResumeStore>()(
 	),
 );
 
-function useTemporalStore<T>(selector: (state: TemporalState<PartializedState>) => T): T {
-	return useStoreWithEqualityFn(useResumeStore.temporal, selector);
-}
-
 export function useInitializeResumeStore() {
 	return useResumeStore((state) => state.initialize);
 }
@@ -328,29 +322,6 @@ export function useUpdateResumeData() {
 		},
 		[queryClient, resumeId, updateResumeData],
 	);
-}
-
-export function useResumeHistory() {
-	const canUndo = useTemporalStore((state) => state.pastStates.length > 0);
-	const canRedo = useTemporalStore((state) => state.futureStates.length > 0);
-
-	const undo = useCallback(() => {
-		const before = useResumeStore.getState().resume;
-		if (!before) return;
-
-		useResumeStore.temporal.getState().undo();
-		syncCurrentResume(before.id);
-	}, []);
-
-	const redo = useCallback(() => {
-		const before = useResumeStore.getState().resume;
-		if (!before) return;
-
-		useResumeStore.temporal.getState().redo();
-		syncCurrentResume(before.id);
-	}, []);
-
-	return { undo, redo, canUndo, canRedo };
 }
 
 export function useResumeCleanup() {
