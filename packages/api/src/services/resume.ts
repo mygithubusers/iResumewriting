@@ -13,7 +13,12 @@ import { defaultResumeData } from "@reactive-resume/schema/resume/default";
 import { applyResumePatches, ResumePatchError } from "@reactive-resume/utils/resume/patch";
 import { generateId } from "@reactive-resume/utils/string";
 import { grantResumeAccess, hasResumeAccess } from "../helpers/resume-access";
-import { assertCanView, isOwner, redactResumeForViewer, shouldCountForStatistics } from "./resume-access-policy";
+import {
+	assertCanView,
+	isOwner,
+	redactResumeForViewer,
+	shouldCountForStatistics,
+} from "../helpers/resume-access-policy";
 import { getStorageService } from "./storage";
 
 const tags = {

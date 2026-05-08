@@ -9,6 +9,7 @@ import {
 } from "@aws-sdk/client-s3";
 import sharp from "sharp";
 import { env } from "@reactive-resume/env/server";
+import { getLocalDataDirectory } from "../helpers/local-data-directory";
 
 interface StorageWriteInput {
 	key: string;
@@ -114,7 +115,7 @@ class LocalStorageService implements StorageService {
 	private rootDirectory: string;
 
 	constructor() {
-		this.rootDirectory = join(process.cwd(), "data");
+		this.rootDirectory = getLocalDataDirectory();
 	}
 
 	async list(prefix: string): Promise<string[]> {
