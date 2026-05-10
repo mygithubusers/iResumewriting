@@ -7,7 +7,7 @@
 @plugin "@tailwindcss/typography";
 
 @source "../**/*.{ts,tsx}";
-@source "../../../apps/**/*.{ts,tsx}";
+@source "../../../../apps/**/*.{ts,tsx}";
 
 @custom-variant dark (&:is(.dark *));
 
