@@ -65,6 +65,11 @@ const resolvePdfTypography = (typography: Typography): Typography => {
 };
 
 export const registerFonts = (typography: Typography): PdfTypography => {
+	Font.registerHyphenationCallback((word) => {
+		if (word.match(/\p{Script=Han}/u)) return word.split("").flatMap((l) => [l, ""]);
+		return [word];
+	});
+
 	const pdfTypography = resolvePdfTypography(typography);
 	const bodyFontFamily = pdfTypography.body.fontFamily;
 	const headingFontFamily = pdfTypography.heading.fontFamily;
