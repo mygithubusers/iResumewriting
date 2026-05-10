@@ -107,7 +107,7 @@ describe("getResumeSectionTitle", () => {
 			customSections: [
 				{
 					id: "ext-1",
-					type: "cover-letter",
+					type: "cover-letter" as const,
 					title: "My Cover Letter",
 					columns: 1,
 					hidden: false,
@@ -124,7 +124,7 @@ describe("getResumeSectionTitle", () => {
 			customSections: [
 				{
 					id: "ext-1",
-					type: "cover-letter",
+					type: "cover-letter" as const,
 					title: "",
 					columns: 1,
 					hidden: false,

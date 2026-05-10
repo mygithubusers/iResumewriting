@@ -1,5 +1,5 @@
 /**
- * @vitest-environment jsdom
+ * @vitest-environment happy-dom
  */
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { downloadFromUrl, downloadWithAnchor, generateFilename } from "./file";
@@ -31,8 +31,8 @@ describe("generateFilename", () => {
 });
 
 describe("downloadWithAnchor", () => {
-	let createObjectURLSpy: ReturnType<typeof vi.fn>;
-	let revokeObjectURLSpy: ReturnType<typeof vi.fn>;
+	let createObjectURLSpy: ReturnType<typeof vi.fn<typeof URL.createObjectURL>>;
+	let revokeObjectURLSpy: ReturnType<typeof vi.fn<typeof URL.revokeObjectURL>>;
 	let originalCreate: typeof URL.createObjectURL;
 	let originalRevoke: typeof URL.revokeObjectURL;
 
@@ -40,8 +40,8 @@ describe("downloadWithAnchor", () => {
 		vi.useFakeTimers();
 		originalCreate = URL.createObjectURL;
 		originalRevoke = URL.revokeObjectURL;
-		createObjectURLSpy = vi.fn(() => "blob:mock-url");
-		revokeObjectURLSpy = vi.fn();
+		createObjectURLSpy = vi.fn<typeof URL.createObjectURL>(() => "blob:mock-url");
+		revokeObjectURLSpy = vi.fn<typeof URL.revokeObjectURL>();
 		URL.createObjectURL = createObjectURLSpy;
 		URL.revokeObjectURL = revokeObjectURLSpy;
 	});
@@ -91,8 +91,8 @@ describe("downloadWithAnchor", () => {
 
 describe("downloadFromUrl", () => {
 	let originalFetch: typeof global.fetch;
-	let createObjectURLSpy: ReturnType<typeof vi.fn>;
-	let revokeObjectURLSpy: ReturnType<typeof vi.fn>;
+	let createObjectURLSpy: ReturnType<typeof vi.fn<typeof URL.createObjectURL>>;
+	let revokeObjectURLSpy: ReturnType<typeof vi.fn<typeof URL.revokeObjectURL>>;
 	let originalCreate: typeof URL.createObjectURL;
 	let originalRevoke: typeof URL.revokeObjectURL;
 
@@ -100,8 +100,8 @@ describe("downloadFromUrl", () => {
 		originalFetch = global.fetch;
 		originalCreate = URL.createObjectURL;
 		originalRevoke = URL.revokeObjectURL;
-		createObjectURLSpy = vi.fn(() => "blob:mock-url");
-		revokeObjectURLSpy = vi.fn();
+		createObjectURLSpy = vi.fn<typeof URL.createObjectURL>(() => "blob:mock-url");
+		revokeObjectURLSpy = vi.fn<typeof URL.revokeObjectURL>();
 		URL.createObjectURL = createObjectURLSpy;
 		URL.revokeObjectURL = revokeObjectURLSpy;
 	});

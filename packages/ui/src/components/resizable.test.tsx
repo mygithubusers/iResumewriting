@@ -5,7 +5,7 @@ import { ResizableGroup, ResizablePanel, ResizableSeparator } from "./resizable"
 describe("ResizableGroup", () => {
 	it("renders with data-slot='resizable-panel-group'", () => {
 		const { container } = render(
-			<ResizableGroup direction="horizontal">
+			<ResizableGroup orientation="horizontal">
 				<ResizablePanel>A</ResizablePanel>
 				<ResizableSeparator />
 				<ResizablePanel>B</ResizablePanel>
@@ -16,7 +16,7 @@ describe("ResizableGroup", () => {
 
 	it("merges custom className", () => {
 		const { container } = render(
-			<ResizableGroup direction="horizontal" className="my-group">
+			<ResizableGroup orientation="horizontal" className="my-group">
 				<ResizablePanel>x</ResizablePanel>
 			</ResizableGroup>,
 		);
@@ -27,7 +27,7 @@ describe("ResizableGroup", () => {
 describe("ResizablePanel", () => {
 	it("renders with data-slot='resizable-panel'", () => {
 		const { container } = render(
-			<ResizableGroup direction="horizontal">
+			<ResizableGroup orientation="horizontal">
 				<ResizablePanel>x</ResizablePanel>
 			</ResizableGroup>,
 		);
@@ -38,7 +38,7 @@ describe("ResizablePanel", () => {
 describe("ResizableSeparator", () => {
 	it("renders with data-slot='resizable-handle' and no inner handle by default", () => {
 		const { container } = render(
-			<ResizableGroup direction="horizontal">
+			<ResizableGroup orientation="horizontal">
 				<ResizablePanel>A</ResizablePanel>
 				<ResizableSeparator />
 				<ResizablePanel>B</ResizablePanel>
@@ -52,7 +52,7 @@ describe("ResizableSeparator", () => {
 
 	it("renders inner handle when withHandle=true", () => {
 		const { container } = render(
-			<ResizableGroup direction="horizontal">
+			<ResizableGroup orientation="horizontal">
 				<ResizablePanel>A</ResizablePanel>
 				<ResizableSeparator withHandle />
 				<ResizablePanel>B</ResizablePanel>

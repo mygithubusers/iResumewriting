@@ -4,5 +4,5 @@ import { createVitestProjectConfig } from "../../vitest.shared";
 export default createVitestProjectConfig({
 	name: "@reactive-resume/import",
 	dirname: fileURLToPath(new URL(".", import.meta.url)),
-	environment: "jsdom",
+	environment: "happy-dom",
 });

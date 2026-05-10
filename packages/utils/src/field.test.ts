@@ -43,7 +43,7 @@ describe("filterFieldValues", () => {
 
 	it("filters out fields with missing keys", () => {
 		const fields = [{ key: "name" as const }];
-		const result = filterFieldValues({}, ...fields);
+		const result = filterFieldValues<"name", { key: "name" }>({}, ...fields);
 
 		expect(result.size).toBe(0);
 	});

@@ -27,10 +27,24 @@ export const createVitestProjectConfig = ({
 		test: {
 			name,
 			environment,
+			environmentOptions: {
+				happyDOM: {
+					settings: {
+						disableJavaScriptFileLoading: true,
+						disableCSSFileLoading: true,
+						navigation: {
+							disableMainFrameNavigation: true,
+							disableChildFrameNavigation: true,
+							disableChildPageNavigation: true,
+						},
+					},
+				},
+			},
 			setupFiles: [setupFile],
 			include: ["src/**/*.{test,spec}.?(c|m)[jt]s?(x)"],
 			exclude: ["node_modules", "dist", ".output", "coverage", "reports"],
-			pool: "forks",
+			pool: "threads",
+			isolate: false,
 			passWithNoTests: true,
 			coverage: {
 				provider: "v8",

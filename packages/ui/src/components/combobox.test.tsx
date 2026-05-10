@@ -138,8 +138,12 @@ describe("ComboboxCollection", () => {
 					<ComboboxInput />
 					<ComboboxContent>
 						<ComboboxList>
-							<ComboboxCollection items={items}>
-								{(item) => <ComboboxItem value={item}>{item}</ComboboxItem>}
+							<ComboboxCollection>
+								{(item) => (
+									<ComboboxItem key={item} value={item}>
+										{item}
+									</ComboboxItem>
+								)}
 							</ComboboxCollection>
 						</ComboboxList>
 					</ComboboxContent>

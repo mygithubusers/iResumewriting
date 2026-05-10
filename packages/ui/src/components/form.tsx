@@ -40,12 +40,12 @@ function FormLabel({ className, ...props }: React.ComponentProps<typeof Label>) 
 	);
 }
 
-function FormControl(props: useRender.ComponentProps<"div">) {
+function FormControl({ render, ...props }: useRender.ComponentProps<"div">) {
 	const { id, hasError } = useFormItem();
 
 	return useRender({
-		...props,
 		defaultTagName: "div",
+		render,
 		state: { slot: "form-control" },
 		props: {
 			id: `${id}-form-item`,
