@@ -127,7 +127,7 @@ const analysis = {
 	},
 };
 
-function toSharedResumeResponse<TPassword extends boolean>(
+function toSharedResumeResponse(
 	resume: {
 		id: string;
 		name: string;
@@ -137,7 +137,7 @@ function toSharedResumeResponse<TPassword extends boolean>(
 		isPublic: boolean;
 		isLocked: boolean;
 	},
-	hasPassword: TPassword,
+	hasPassword: boolean,
 ) {
 	return {
 		id: resume.id,

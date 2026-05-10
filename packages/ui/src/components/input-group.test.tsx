@@ -1,5 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import userEvent from "@testing-library/user-event";
+import { describe, expect, it, test } from "vitest";
+import { createPortal } from "react-dom";
 import {
 	InputGroup,
 	InputGroupAddon,
@@ -8,6 +10,10 @@ import {
 	InputGroupText,
 	InputGroupTextarea,
 } from "./input-group";
+
+function PortaledInput() {
+	return createPortal(<input aria-label="Portaled input" />, document.body);
+}
 
 describe("InputGroup", () => {
 	it("renders a fieldset with data-slot='input-group'", () => {
@@ -89,6 +95,29 @@ describe("InputGroupAddon", () => {
 		const addon = screen.getByTestId("addon");
 		fireEvent.keyDown(addon, { key: "a" });
 		expect(document.activeElement).not.toBe(screen.getByTestId("i"));
+	});
+
+	test("does not redirect focus from controls rendered through a portal", async () => {
+		const user = userEvent.setup();
+
+		render(
+			<InputGroup>
+				<InputGroupAddon align="inline-end">
+					<span>Addon</span>
+					<PortaledInput />
+				</InputGroupAddon>
+
+				<InputGroupInput aria-label="Outer input" />
+			</InputGroup>,
+		);
+
+		const portaledInput = screen.getByLabelText("Portaled input");
+		const outerInput = screen.getByLabelText("Outer input");
+
+		await user.click(portaledInput);
+
+		expect(document.activeElement).toBe(portaledInput);
+		expect(document.activeElement).not.toBe(outerInput);
 	});
 });
 
