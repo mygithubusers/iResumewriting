@@ -3,7 +3,7 @@ import type { TemplatePageProps } from "../../document";
 import type { TemplateColorRoles, TemplateStyleContext, TemplateStyleSlots } from "../shared/types";
 import { Image, Page, StyleSheet, View } from "@react-pdf/renderer";
 import { useMemo } from "react";
-import { parseColorString, rgbaStringToHex } from "@reactive-resume/utils/color";
+import { rgbaStringToHex } from "@reactive-resume/utils/color";
 import { useRender } from "../../context";
 import { CustomFieldContactItem, WebsiteContactItem } from "../shared/contact-item";
 import { TemplateProvider } from "../shared/context";
@@ -109,14 +109,6 @@ const Header = ({ styles }: { styles: LaprasStyles }) => {
 	);
 };
 
-const getAlphaColor = (color: string, alpha: number): string => {
-	const parsed = parseColorString(color);
-
-	if (!parsed) return rgbaStringToHex(color);
-
-	return `rgba(${parsed.r}, ${parsed.g}, ${parsed.b}, ${Math.max(0, Math.min(1, alpha))})`;
-};
-
 const useLaprasTemplate = (): LaprasTemplate => {
 	const { picture, metadata } = useRender();
 
@@ -124,7 +116,7 @@ const useLaprasTemplate = (): LaprasTemplate => {
 		const foreground = rgbaStringToHex(metadata.design.colors.text);
 		const background = rgbaStringToHex(metadata.design.colors.background);
 		const primary = rgbaStringToHex(metadata.design.colors.primary);
-		const borderColor = getAlphaColor(metadata.design.colors.text, 0.1);
+		const borderColor = "#CCCCCC";
 		const pictureBorderRadius = Math.min(picture.borderRadius, 30);
 		const headingNegativeMargin = metadata.typography.heading.fontSize + 6;
 		const colors: TemplateColorRoles = { foreground, background, primary };
