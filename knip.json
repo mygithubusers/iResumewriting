@@ -18,11 +18,5 @@
 			"ignoreDependencies": ["@aws-sdk/client-s3", "bcrypt", "sharp"]
 		}
 	},
-	"ignoreDependencies": [
-		"@reactive-resume/config",
-		"npm-check-updates",
-		"@testing-library/dom",
-		"@testing-library/react",
-		"@testing-library/user-event"
-	]
+	"ignoreDependencies": ["@reactive-resume/config", "npm-check-updates"]
 }
