@@ -86,11 +86,7 @@ const extensions = [
 	}),
 	TextStyle,
 	Color,
-	Highlight.configure({
-		HTMLAttributes: {
-			class: "rounded-md px-0.5 py-px",
-		},
-	}),
+	Highlight.configure(),
 	TextAlign.configure({ types: ["heading", "paragraph", "listItem"] }),
 	TableKit.configure(),
 ];
@@ -107,6 +103,8 @@ export function RichInput({ value, onChange, style, className, editorClassName, 
 	const { i18n } = useLingui();
 	const textDirection = isRTL(i18n.locale) ? "rtl" : undefined;
 	const [isFullscreen, setIsFullscreen] = useState(false);
+
+	console.log(value);
 
 	const editor = useEditor({
 		...options,

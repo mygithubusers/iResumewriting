@@ -1,5 +1,12 @@
+import type { ReactElement } from "react";
 import { describe, expect, it } from "vitest";
-import { normalizeRichTextHtml } from "./rich-text-html";
+import { Text as PdfText } from "@react-pdf/renderer";
+import { renderHtml } from "react-pdf-html";
+import { normalizeRichTextHtml, richTextMarkClassName } from "./rich-text-html";
+
+type PdfElement = ReactElement<{ children?: unknown; element?: { tag: string } }>;
+
+const getPdfElementProps = (element: unknown) => (element as PdfElement).props;
 
 describe("normalizeRichTextHtml", () => {
 	it("wraps loose inline content in a <p>", () => {
@@ -29,6 +36,33 @@ describe("normalizeRichTextHtml", () => {
 
 	it("treats <span> as inline", () => {
 		expect(normalizeRichTextHtml("<span>x</span>")).toBe("<p><span>x</span></p>");
+	});
+
+	it("maps <mark> to a styled inline span", () => {
+		expect(normalizeRichTextHtml('<mark class="rounded-md">highlighted</mark> text')).toBe(
+			'<p><span class="rounded-md rr-pdf-mark">highlighted</span> text</p>',
+		);
+	});
+
+	it("keeps highlighted text in the same react-pdf-html inline text bucket", () => {
+		const root = renderHtml(normalizeRichTextHtml("before <mark>highlighted</mark> after"), {
+			resetStyles: true,
+			stylesheet: {
+				[`.${richTextMarkClassName}`]: { backgroundColor: "#ffff00" },
+			},
+		});
+
+		const paragraph = getPdfElementProps(root).children;
+		const textBucket = getPdfElementProps(paragraph).children as PdfElement;
+		const textChildren = getPdfElementProps(textBucket).children as unknown[];
+		const highlightedSpan = textChildren[1];
+
+		expect(textBucket.type).toBe(PdfText);
+		expect(textChildren).toHaveLength(3);
+		expect(textChildren[0]).toBe("before ");
+		expect(getPdfElementProps(highlightedSpan).element?.tag).toBe("span");
+		expect(getPdfElementProps(highlightedSpan).children).toBe("highlighted");
+		expect(textChildren[2]).toBe(" after");
 	});
 
 	it("trims input whitespace", () => {
