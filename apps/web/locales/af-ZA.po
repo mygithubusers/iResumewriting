@@ -8,7 +8,7 @@ msgstr ""
 "Language: af\n"
 "Project-Id-Version: reactive-resume\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-11 12:13\n"
+"PO-Revision-Date: 2026-05-13 06:05\n"
 "Last-Translator: \n"
 "Language-Team: Afrikaans\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -2877,6 +2877,10 @@ msgstr "Enkelkolom met 'n sybalk en skoon roostruitleg; veelsydig vir enige pro
 #: src/dialogs/resume/template/data.ts
 msgid "Single-column with an inline three-column entry header (position · organization · period); compact and ATS-friendly, well-suited for Asian resume conventions (CN/JP/KR)."
 msgstr "Enkelkolom met 'n inlyn drie-kolom-inskrywingsopskrif (posisie · organisasie · tydperk); kompak en ATS-vriendelik, goed geskik vir Asiatiese CV-konvensies (CN/JP/KR)."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Single-column with uppercase section headings and a primary-color top rule on every page; polished for executive, consulting, or startup resumes."
+msgstr "Enkelkolom met hoofletter-afdelingopskrifte en 'n primêre kleur boonste reël op elke bladsy; gepoleer vir uitvoerende, konsulterende of opstart-CV's."
 
 #: src/dialogs/resume/template/data.ts
 msgid "Single-column; polished and serious for senior or enterprise-level positions."

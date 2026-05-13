@@ -8,7 +8,7 @@ msgstr ""
 "Language: mr\n"
 "Project-Id-Version: reactive-resume\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-11 12:13\n"
+"PO-Revision-Date: 2026-05-13 06:05\n"
 "Last-Translator: \n"
 "Language-Team: Marathi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -2877,6 +2877,10 @@ msgstr "एकाच स्तंभाचा साचा, साइडबा�
 #: src/dialogs/resume/template/data.ts
 msgid "Single-column with an inline three-column entry header (position · organization · period); compact and ATS-friendly, well-suited for Asian resume conventions (CN/JP/KR)."
 msgstr "एक-स्तंभी, इनलाइन तीन-स्तंभ प्रवेश शीर्षक (स्थान · संस्था · कालावधी); संक्षिप्त आणि ATS-अनुकूल, आशियाई बायोडाटा परंपरांसाठी (CN/JP/KR) योग्य."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Single-column with uppercase section headings and a primary-color top rule on every page; polished for executive, consulting, or startup resumes."
+msgstr ""
 
 #: src/dialogs/resume/template/data.ts
 msgid "Single-column; polished and serious for senior or enterprise-level positions."

@@ -8,7 +8,7 @@ msgstr ""
 "Language: da\n"
 "Project-Id-Version: reactive-resume\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-11 12:13\n"
+"PO-Revision-Date: 2026-05-13 06:05\n"
 "Last-Translator: \n"
 "Language-Team: Danish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -2877,6 +2877,10 @@ msgstr "Enkeltkolonne med sidebjælke og rent gitterlayout; alsidig til enhver p
 #: src/dialogs/resume/template/data.ts
 msgid "Single-column with an inline three-column entry header (position · organization · period); compact and ATS-friendly, well-suited for Asian resume conventions (CN/JP/KR)."
 msgstr "Enspaltet med en inline-overskrift på tre spalter (position - organisation - periode); kompakt og ATS-venlig, velegnet til asiatiske CV-konventioner (CN/JP/KR)."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Single-column with uppercase section headings and a primary-color top rule on every page; polished for executive, consulting, or startup resumes."
+msgstr "Enkelt kolonne med sektionsoverskrifter med store bogstaver og en primærfarvet toplinje på hver side; poleret til CV'er for ledere, konsulenter eller startups."
 
 #: src/dialogs/resume/template/data.ts
 msgid "Single-column; polished and serious for senior or enterprise-level positions."

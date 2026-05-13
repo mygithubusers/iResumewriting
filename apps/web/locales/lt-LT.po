@@ -8,7 +8,7 @@ msgstr ""
 "Language: lt\n"
 "Project-Id-Version: reactive-resume\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-11 12:13\n"
+"PO-Revision-Date: 2026-05-13 06:05\n"
 "Last-Translator: \n"
 "Language-Team: Lithuanian\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && (n%100>19 || n%100<11) ? 0 : (n%10>=2 && n%10<=9) && (n%100>19 || n%100<11) ? 1 : n%1!=0 ? 2: 3);\n"
@@ -2877,6 +2877,10 @@ msgstr "Vienas stulpelis su šonine juosta ir švariu tinklelio išdėstymu; uni
 #: src/dialogs/resume/template/data.ts
 msgid "Single-column with an inline three-column entry header (position · organization · period); compact and ATS-friendly, well-suited for Asian resume conventions (CN/JP/KR)."
 msgstr "Vieno stulpelio su trijų stulpelių įvesties antraštėmis (pareigos - organizacija - taškas); kompaktiškas ir patogus ATS, gerai pritaikytas Azijos šalių CV konvencijoms (CN/JP/KR)."
+
+#: src/dialogs/resume/template/data.ts
+msgid "Single-column with uppercase section headings and a primary-color top rule on every page; polished for executive, consulting, or startup resumes."
+msgstr "Vieno stulpelio su didžiosiomis raidėmis rašomomis skyrių antraštėmis ir pagrindinės spalvos viršutine linija kiekviename puslapyje; puikiai tinka vadovų, konsultavimo ar startuolių gyvenimo aprašymams."
 
 #: src/dialogs/resume/template/data.ts
 msgid "Single-column; polished and serious for senior or enterprise-level positions."
