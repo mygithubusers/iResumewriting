@@ -4,6 +4,34 @@ description: "List of all notable changes and updates to Reactive Resume"
 rss: true
 ---
 
+<Update label="v5.1.3" description="13th May 2026">
+## Highlights
+
+- **New Scizor resume template.** Added the new **Scizor** layout to the template lineup, including builder support, schema/docs updates, and localization strings. [00dafd0c6](https://github.com/amruthpillai/reactive-resume/commit/00dafd0c6), [5f63dc876](https://github.com/amruthpillai/reactive-resume/commit/5f63dc876)
+
+<img src="/images/templates/scizor.webp" alt="Scizor template preview" style={{ aspectRatio: "210/297" }} />
+
+- **Smarter page settings in the builder.** Empty sections are now hidden from page settings to reduce noise and make layout management easier. [#3052](https://github.com/amruthpillai/reactive-resume/pull/3052)
+- **Faster, smoother preview loading.** Improved resume preview loading behavior and added focused tests for preview components. [92a0e3ddb](https://github.com/amruthpillai/reactive-resume/commit/92a0e3ddb)
+
+## Resume Builder & PDF Export Fixes
+
+- Increased header name line height in PDF templates to prevent descender clipping. [#3050](https://github.com/amruthpillai/reactive-resume/pull/3050)
+- Improved CJK rendering reliability across PDF output, including better handling of hyphenation callbacks and italic fallback behavior. [62b0a1d53](https://github.com/amruthpillai/reactive-resume/commit/62b0a1d53), [83a407bc1](https://github.com/amruthpillai/reactive-resume/commit/83a407bc1), [33103536a](https://github.com/amruthpillai/reactive-resume/commit/33103536a), [64ac3ff32](https://github.com/amruthpillai/reactive-resume/commit/64ac3ff32)
+- Fixed split-row right-side content promotion behavior to preserve layout consistency in exports. [#3039](https://github.com/amruthpillai/reactive-resume/pull/3039)
+- Improved rich text and section data handling by filtering invalid or empty items and tightening schema validation for safer rendering. [334ea48bc](https://github.com/amruthpillai/reactive-resume/commit/334ea48bc), [0713cf20d](https://github.com/amruthpillai/reactive-resume/commit/0713cf20d), [4ebe9e5a6](https://github.com/amruthpillai/reactive-resume/commit/4ebe9e5a6)
+
+## Quality, Docs & Maintenance
+
+- Expanded automated coverage significantly, including monorepo-wide unit/component tests and an additional ~500 tests across core packages. [6a01207b6](https://github.com/amruthpillai/reactive-resume/commit/6a01207b6), [#3038](https://github.com/amruthpillai/reactive-resume/pull/3038)
+- Migrated the test environment from jsdom to happy-dom for faster and more stable test runs. [7a60a42a0](https://github.com/amruthpillai/reactive-resume/commit/7a60a42a0)
+- Updated documentation and defaults, including AGENTS guidance and export format notes. [#3054](https://github.com/amruthpillai/reactive-resume/pull/3054), [71aadbd73](https://github.com/amruthpillai/reactive-resume/commit/71aadbd73), [a93e7bd19](https://github.com/amruthpillai/reactive-resume/pull/3024)
+- Synced translation catalogs from Crowdin and added template-specific translation updates for Scizor. [#3053](https://github.com/amruthpillai/reactive-resume/pull/3053), [e574d4005](https://github.com/amruthpillai/reactive-resume/pull/3037), [#3026](https://github.com/amruthpillai/reactive-resume/pull/3026), [#3023](https://github.com/amruthpillai/reactive-resume/pull/3023), [c5787fe15](https://github.com/amruthpillai/reactive-resume/commit/c5787fe15)
+- Updated dependencies and repository cleanup tasks, including PostCSS refresh and Knip fixes. [e35ff8391](https://github.com/amruthpillai/reactive-resume/commit/e35ff8391), [3cd228bd8](https://github.com/amruthpillai/reactive-resume/commit/3cd228bd8), [978cbaf1f](https://github.com/amruthpillai/reactive-resume/commit/978cbaf1f), [0daf868cd](https://github.com/amruthpillai/reactive-resume/commit/0daf868cd)
+
+**Full Changelog**: [v5.1.2...v5.1.3](https://github.com/amruthpillai/reactive-resume/compare/v5.1.2...v5.1.3)
+</Update>
+
 <Update label="v5.1.2" description="10th May 2026">
 <Note>
   **Self-hosters using local storage:** the official Docker image now sets `LOCAL_STORAGE_PATH=/app/data` and validates that the directory is writable at startup. If you override the container environment, keep `LOCAL_STORAGE_PATH` pointed at an absolute writable path.
