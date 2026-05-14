@@ -8,7 +8,7 @@ msgstr ""
 "Language: uz\n"
 "Project-Id-Version: reactive-resume\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-13 06:07\n"
+"PO-Revision-Date: 2026-05-14 13:57\n"
 "Last-Translator: \n"
 "Language-Team: Uzbek\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -47,11 +47,6 @@ msgstr "{0, plural, one {# element} other {# elementlar}}"
 #: src/routes/builder/$resumeId/-sidebar/left/sections/experience.tsx
 msgid "{0, plural, one {# role} other {# roles}}"
 msgstr "{0, plural, one {# rol} other {# rol}}"
-
-#. placeholder {0}: resolutions.length
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "{0} proposals reviewed"
-msgstr "{0} takliflar ko'rib chiqildi"
 
 #: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
 #: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
@@ -123,18 +118,6 @@ msgstr "A4"
 #: src/routes/_home/-sections/faq.tsx
 msgid "Absolutely! You can export your resume to PDF with a single click. The exported PDF maintains all your formatting and styling perfectly."
 msgstr "Albatta! Tarjimai holingizni bir marta bosish bilan PDF formatiga eksport qilishingiz mumkin. Eksport qilingan PDF sizning barcha format va uslublaringizni to‘liq saqlab qoladi."
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Accept"
-msgstr "Qabul qilish"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Accept all"
-msgstr "Hammasini qabul qilish"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Accepted proposal"
-msgstr "Qabul qilingan taklif"
 
 #: src/routes/_home/-sections/features.tsx
 msgid "Access your resumes and data programmatically using the API."
@@ -210,6 +193,14 @@ msgstr "Yangi ko‘nikma qo‘shish"
 msgid "Add a new volunteer experience"
 msgstr "Yangi ko‘ngilli tajribasi qo‘shish"
 
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Add and test a provider before starting a thread."
+msgstr "Mavzuni boshlashdan oldin provayderni qo'shing va sinab ko'ring."
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Add and test a provider before starting an agent thread."
+msgstr "Agent mavzusini boshlashdan oldin provayderni qo'shing va sinab ko'ring."
+
 #: src/components/input/rich-input.tsx
 msgid "Add Column After"
 msgstr "Ustundan keyin ustun qo‘shish"
@@ -230,6 +221,10 @@ msgstr "Bitta kompaniyada martaba oʻsishini koʻrsatish uchun bir nechta rol qo
 msgid "Add Page"
 msgstr "Sahifa qo‘shish"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Add Provider"
+msgstr "Provayder qo'shish"
+
 #: src/dialogs/resume/sections/experience.tsx
 msgid "Add Role"
 msgstr "Rol qoʻshish"
@@ -242,41 +237,57 @@ msgstr "Qatordan keyin qator qo‘shish"
 msgid "Add Row Before"
 msgstr "Qatordan oldin qator qo‘shish"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Adjust the resume for a remote-first role that values async communication and ownership."
+msgstr "Asinxron aloqa va egalikni qadrlaydigan masofaviy birinchi rol uchun rezyumeni sozlang."
+
 #: src/libs/locale.ts
 msgid "Afrikaans"
 msgstr "Afrikaans"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "After"
-msgstr "Keyin"
+#: src/components/command-palette/pages/navigation.tsx
+msgid "Agent"
+msgstr "Agent"
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Agent ready"
+msgstr "Agent tayyor"
+
+#: src/routes/dashboard/-components/sidebar.tsx
+msgid "Agents"
+msgstr "Agentlar"
 
 #: src/dialogs/resume/import.tsx
 msgid "AI"
 msgstr "SO"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "AI integration disabled"
-msgstr "Sun'iy intellekt integratsiyasi o'chirilgan"
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "AI agent setup is unavailable right now. Please try again in a moment."
+msgstr "Hozirda AI agentini sozlash imkoni yo'q. Iltimos, bir ozdan keyin qayta urinib ko'ring."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "AI proposal applied."
-msgstr "Sun'iy intellekt taklifi qo'llanildi."
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "AI agent setup is unavailable until REDIS_URL and ENCRYPTION_SECRET are configured."
+msgstr "REDIS_URL va ENCRYPTION_SECRET sozlanmaguncha AI agentini sozlash imkoni bo'lmaydi."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "AI proposal rejected."
-msgstr "Sun'iy intellekt bo'yicha taklif rad etildi."
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "AI provider management is unavailable until REDIS_URL and ENCRYPTION_SECRET are configured."
+msgstr "REDIS_URL va ENCRYPTION_SECRET sozlanmaguncha, AI provayderini boshqarish imkonsiz bo'ladi."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "AI proposals applied."
-msgstr "Sun'iy intellekt bo'yicha takliflar qo'llanildi."
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "AI provider management is unavailable. Please try again."
+msgstr "Sun'iy intellekt provayderini boshqarish imkoni yo'q. Qaytadan urinib ko'ring."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "AI proposals rejected."
-msgstr "Sun'iy intellekt bo'yicha takliflar rad etildi."
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "AI provider saved. Test it before use."
+msgstr "Sun'iy intellekt provayderi saqlandi. Ishlatishdan oldin sinab ko'ring."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "AI Resume Assistant"
-msgstr "Sun'iy intellekt rezyume yordamchisi"
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "AI Providers"
+msgstr "Sun'iy intellekt provayderlari"
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "AI providers require REDIS_URL and ENCRYPTION_SECRET to be configured."
+msgstr "Sun'iy intellekt provayderlari REDIS_URL va ENCRYPTION_SECRET ni sozlashni talab qiladi."
 
 #: src/libs/locale.ts
 msgid "Albanian"
@@ -316,7 +327,6 @@ msgstr "Tahlil qilinmoqda..."
 msgid "And many more..."
 msgstr "Va yana ko‘pgina..."
 
-#. AI provider option label in dashboard AI settings
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Anthropic Claude"
 msgstr "Antropik Klod"
@@ -347,6 +357,10 @@ msgstr "API kalit"
 msgid "API Keys"
 msgstr "API kalitlar"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "API keys are encrypted on the server and never shown again after saving."
+msgstr "API kalitlari serverda shifrlangan va saqlangandan keyin boshqa ko'rsatilmaydi."
+
 #: src/routes/dashboard/settings/api-keys.tsx
 msgid "API Reference"
 msgstr "API ma'lumotnoma"
@@ -362,6 +376,11 @@ msgstr "Ilova statistikasi"
 #: src/libs/locale.ts
 msgid "Arabic"
 msgstr "Arab tili"
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
+msgid "Archive"
+msgstr "Arxiv"
 
 #: src/hooks/use-form-blocker.tsx
 msgid "Are you sure you want to close this dialog?"
@@ -408,25 +427,24 @@ msgid "Area of Study"
 msgstr "Ta'lim sohasi"
 
 #: src/components/command-palette/pages/navigation.tsx
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Artificial Intelligence"
 msgstr "Sun'iy intellekt"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Ask for a targeted resume change..."
-msgstr "Maqsadli rezyumeni o'zgartirishni so'rang..."
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Ask for an incremental change"
-msgstr "Bosqichma-bosqich o'zgarishni so'rang"
+#: src/routes/agent/$threadId.tsx
+msgid "Ask anything about this resume"
+msgstr "Ushbu rezyume haqida biron narsa so'rang"
 
 #: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
 msgid "Aspect Ratio"
 msgstr "Tomonlar nisbati"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Assistant request failed"
-msgstr "Yordamchi so'rovi bajarilmadi"
+#: src/routes/agent/$threadId.tsx
+msgid "Attach files"
+msgstr "Fayllarni biriktirish"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Attachment uploaded."
+msgstr "Ilova yuklandi."
 
 #: src/components/command-palette/pages/navigation.tsx
 #: src/routes/dashboard/-components/sidebar.tsx
@@ -458,6 +476,10 @@ msgstr "Ozarbayjon tili"
 msgid "Back to Login"
 msgstr "Kirishga qaytish"
 
+#: src/routes/agent/-components/thread-sidebar.tsx
+msgid "Back to resumes"
+msgstr "Rezyumelarga qaytish"
+
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Background Color"
 msgstr "Orqa fon rangi"
@@ -467,8 +489,8 @@ msgid "Backup codes copied to clipboard."
 msgstr "Zaxira kodlari buferga nusxalandi."
 
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Base URL (Optional)"
-msgstr "Asosiy URL (ixtiyoriy)"
+msgid "Base URL"
+msgstr "Asosiy URL"
 
 #: src/libs/resume/section.tsx
 msgid "Basics"
@@ -478,13 +500,13 @@ msgstr "Asoslar"
 msgid "Beautiful templates to choose from, with more on the way."
 msgstr "Goʻzal shablonlar tanlang, yana koʻplari yoʻlda."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Before"
-msgstr "Oldin"
-
 #: src/libs/locale.ts
 msgid "Bengali"
 msgstr "Bengal tili"
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Blank draft"
+msgstr "Bo'sh qoralama"
 
 #: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
 msgctxt "Body Text (paragraphs, lists, etc.)"
@@ -561,6 +583,10 @@ msgstr "Rezyumeni PDF ga eksport qila olamanmi?"
 msgid "Cancel"
 msgstr "Bekor qilish"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Cannot revert; the resume has changed since this edit was applied."
+msgstr "Qaytarib bo'lmaydi; ushbu tahrir qo'llanilganidan beri rezyume o'zgardi."
+
 #: src/libs/locale.ts
 msgid "Catalan"
 msgstr "Katalan tili"
@@ -599,6 +625,10 @@ msgstr "Fikringiz oʻzgardimi? Rezyumeningizga tushunarliroq nom bering."
 msgid "Changelog"
 msgstr "O'zgarishlar jurnali"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Chat"
+msgstr "Chat"
+
 #: src/routes/auth/forgot-password.tsx
 msgid "Check your email for a link to reset your password."
 msgstr "Parolingizni tiklash uchun havola yuborilganligini emailingizni tekshiring."
@@ -615,10 +645,22 @@ msgstr "Xitoy (Soddalashtirilgan)"
 msgid "Chinese (Traditional)"
 msgstr "Xitoy (An’anaviy)"
 
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Choose a model and resume draft."
+msgstr "Modelni tanlang va qoralamani rezyume qiling."
+
 #. Preset or custom shade refer to the color picker
 #: src/components/input/rich-input.tsx
 msgid "Choose a preset or custom shade."
 msgstr "Oldindan belgilangan soya yoki moslashtirilgan soyani tanlang."
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Choose a resume"
+msgstr "Rezyumeni tanlang"
+
+#: src/routes/agent/index.tsx
+msgid "Choose an existing conversation from the sidebar, or start a new draft-focused thread."
+msgstr "Yon paneldan mavjud suhbatni tanlang yoki qoralamaga yo'naltirilgan yangi mavzuni boshlang."
 
 #: src/components/level/combobox.tsx
 msgid "Circle"
@@ -632,14 +674,6 @@ msgstr "Tiniq"
 #: src/dialogs/resume/import.tsx
 msgid "Click here to select a file to import"
 msgstr "Import qilish uchun faylni tanlash uchun shu yerni bosing"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Close"
-msgstr "Yopish"
-
-#: src/routes/builder/$resumeId/-components/dock.tsx
-msgid "Close AI assistant"
-msgstr "Sun'iy intellekt yordamchisini yopish"
 
 #: src/components/input/rich-input.tsx
 msgid "Code Block"
@@ -669,6 +703,10 @@ msgstr "Hamjamiyat"
 msgid "Company"
 msgstr "Tashkilot"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Compare this resume against this role URL and update keywords while keeping the voice concise and credible."
+msgstr "Ushbu rezyumeni ushbu lavozim URL manzili bilan taqqoslang va ovozni aniq va ishonchli saqlash bilan birga kalit so'zlarni yangilang."
+
 #: src/routes/_home/-sections/features.tsx
 msgid "Completely free, forever, no hidden costs."
 msgstr "Mutlaqo bepul, abadiy, yashirin toʻlovlar yoʻq."
@@ -686,10 +724,6 @@ msgstr "Tasdiqlash"
 #: src/routes/dashboard/settings/authentication/-components/social-provider.tsx
 msgid "Connect"
 msgstr "Ulanish"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Connect and verify an AI provider before using resume editing proposals."
-msgstr "Rezyume tahrirlash takliflaridan foydalanishdan oldin AI provayderiga ulaning va tasdiqlang."
 
 #: src/dialogs/resume/sections/cover-letter.tsx
 #: src/dialogs/resume/sections/summary-item.tsx
@@ -717,8 +751,17 @@ msgstr "Qoldirgan joyingizdan davom etish uchun Reactive Resume yoki har qanday 
 msgid "Contributions fund bug fixes, security updates, and continuous improvements to keep the app running smoothly."
 msgstr "Hissalaringiz xatoliklarni tuzatish, xavfsizlik yangilanishlari va doimiy takomillashtirishlarni moliyalashtiradi va ilovani muammosiz ishlashini ta'minlaydi."
 
+#: src/routes/agent/$threadId.tsx
+msgid "Conversation copied."
+msgstr "Suhbat nusxalandi."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Conversation JSON copied."
+msgstr "JSON suhbatidan nusxa ko'chirildi."
+
 #. Action button to copy two-factor backup codes to clipboard
 #: src/dialogs/auth/enable-two-factor.tsx
+#: src/routes/agent/$threadId.tsx
 msgid "Copy"
 msgstr "Nusxalash"
 
@@ -730,6 +773,10 @@ msgstr "Bu zaxira kodlarini nusxalab oling va qurilmangizni yoʻqotsangiz, kerak
 msgid "Copy Backup Codes"
 msgstr "Zaxira kodlarini nusxalash"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Copy JSON"
+msgstr "JSON nusxasini olish"
+
 #: src/dialogs/api-key/create.tsx
 msgid "Copy this secret key and use it in your applications to access your data."
 msgstr "Ushbu maxfiy kalitni nusxalab, maʼlumotlaringizga kirish uchun ilovalaringizda foydalaning."
@@ -738,18 +785,20 @@ msgstr "Ushbu maxfiy kalitni nusxalab, maʼlumotlaringizga kirish uchun ilovalar
 msgid "Copy URL"
 msgstr "URL-ni nusxalash"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Could not apply the AI proposal."
-msgstr "Sun'iy intellekt taklifini qo'llab bo'lmadi."
-
 #. Error description when AI provider cannot be reached during resume analysis
 #. Error shown when AI provider is unreachable during PDF/DOCX resume import
-#. Error shown when the configured AI provider cannot be reached during connection test
 #: src/dialogs/resume/import.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/resume-analysis.tsx
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Could not reach the AI provider. Please try again."
 msgstr "AI provayderiga ulanib bo'lmadi. Iltimos, yana urinib ko'ring."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Could not revert this patch."
+msgstr "Ushbu yamoqni qaytarib bo'lmadi."
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Could not verify provider connection."
+msgstr "Provayder ulanishini tekshirib bo'lmadi."
 
 #. Fallback title for a custom cover letter item in resume builder when recipient is empty
 #. Fallback title for a custom cover letter item in resume builder when recipient is unavailable
@@ -865,6 +914,10 @@ msgstr "Namunaviy rezyume yarating"
 msgid "Create as many resumes as you want, without limits."
 msgstr "Istaganingizcha rezyumelar yarating, cheklovlarsiz."
 
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Create from scratch"
+msgstr "Noldan yarating"
+
 #. Call-to-action link from login page to account registration page
 #: src/routes/auth/login.tsx
 msgid "Create one now"
@@ -934,6 +987,10 @@ msgstr "Maʼlumotlar xavfsizligi"
 msgid "Date"
 msgstr "Sana"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Decrease zoom"
+msgstr "Masshtabni kichraytirish"
+
 #: src/dialogs/resume/sections/education.tsx
 msgid "Degree"
 msgstr "Daraja"
@@ -944,6 +1001,8 @@ msgstr "Daraja"
 #. Passkey row action to remove the selected passkey
 #. Resume card context menu destructive action to remove a resume
 #. Resume card dropdown destructive action to remove a resume
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
 #: src/routes/builder/$resumeId/-components/header.tsx
 #: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
 #: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
@@ -970,6 +1029,10 @@ msgstr "Sahifani o'chirish"
 msgid "Delete picture"
 msgstr "Rasmni o'chirish"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Delete provider"
+msgstr "Provayderni o'chirish"
+
 #: src/components/input/rich-input.tsx
 msgid "Delete Row"
 msgstr "Qatorni o'chirish"
@@ -977,6 +1040,11 @@ msgstr "Qatorni o'chirish"
 #: src/components/input/rich-input.tsx
 msgid "Delete Table"
 msgstr "Jadvalni o'chirish"
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
+msgid "Delete this agent thread?"
+msgstr "Ushbu agent mavzusi oʻchirib tashlansinmi?"
 
 #: src/routes/dashboard/settings/danger-zone.tsx
 msgid "Deleting your account..."
@@ -1016,10 +1084,6 @@ msgstr "2BShT (2FA) ni o'chirish"
 #: src/dialogs/auth/disable-two-factor.tsx
 msgid "Disable Two-Factor Authentication"
 msgstr "Ikki bosqichli autentifikatsiyani o'chirish"
-
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Disabled"
-msgstr "Oʻchirilgan"
 
 #: src/dialogs/auth/disable-two-factor.tsx
 msgid "Disabling two-factor authentication..."
@@ -1081,6 +1145,7 @@ msgid "Download JSON"
 msgstr "JSON-ni yuklab olish"
 
 #: src/routes/$username/-components/public-resume.tsx
+#: src/routes/agent/$threadId.tsx
 #: src/routes/builder/$resumeId/-components/dock.tsx
 msgid "Download PDF"
 msgstr "PDF yuklab olish"
@@ -1104,6 +1169,10 @@ msgstr "Bo‘limlarni ustunlar orasida ko‘chirish uchun shu yergа tortib tash
 msgid "Duplicate"
 msgstr "Nusxalash"
 
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Duplicate as AI Draft"
+msgstr "AI loyihasi sifatida nusxalash"
+
 #: src/dialogs/resume/index.tsx
 msgid "Duplicate Resume"
 msgstr "Rezyumeni nusxalash"
@@ -1119,11 +1188,6 @@ msgstr "Rezyume nusxalanmoqda..."
 #: src/libs/locale.ts
 msgid "Dutch"
 msgstr "Golland tili"
-
-#. Example model-name placeholder in AI settings
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "e.g., gpt-4, claude-3-opus, gemini-pro"
-msgstr "masalan, gpt-4, claude-3-opus, gemini-pro"
 
 #: src/components/input/chip-input.tsx
 msgid "Edit"
@@ -1170,14 +1234,6 @@ msgstr "Email manzili"
 #: src/routes/dashboard/settings/authentication/-components/two-factor.tsx
 msgid "Enable 2FA"
 msgstr "2BShT (2FA) ni yoqish"
-
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Enable AI Features"
-msgstr "AI xususiyatlarini yoqish"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Enable AI integration"
-msgstr "Sun'iy intellekt integratsiyasini yoqish"
 
 #: src/dialogs/auth/enable-two-factor.tsx
 msgid "Enable Two-Factor Authentication"
@@ -1239,17 +1295,9 @@ msgstr "Ikki bosqichli autentifikatsiyani o‘chirishni tasdiqlash uchun parolin
 msgid "Every contribution, big or small, makes a huge difference to the project.<0/>Thank you for your support!"
 msgstr "Har bir hissa, kichik yoki katta bo‘lishidan qat’i nazar, loyiha uchun katta ahamiyatga ega.<0/>Qo‘llab-quvvatlaganingiz uchun rahmat!"
 
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Everything entered here is stored locally on your browser. Your data is only sent to the server when making a request to the AI provider, and is never stored or logged on our servers."
-msgstr "Bu yerga kiritilgan barcha ma'lumotlar faqat brauzeringizda lokal saqlanadi. Faqat AI provayderiga so'rov yuborilganda ma'lumotlaringiz serverga yuboriladi, ular bizning serverlarimizda saqlanmaydi yoki qayd etilmaydi."
-
 #: src/routes/_home/-sections/features.tsx
 msgid "Everything you need to create, customize, and share professional resumes. Built with privacy in mind, powered by open source, and completely free forever."
 msgstr "Professional rezyumelar yaratish, sozlash va ulashish uchun kerakli barcha narsa. Maxfiylik tamoyiliga asoslangan, ochiq manba asosida qurilgan va doimiy ravishda butunlay bepul."
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Examples: rewrite the summary, tighten one experience bullet, add metrics, or adapt the resume for a job description."
-msgstr "Misollar: xulosani qayta yozish, bitta tajriba bandini qisqartirish, ko'rsatkichlarni qo'shish yoki rezyumeni ish tavsifiga moslashtirish."
 
 #: src/components/input/rich-input.tsx
 msgid "Exit Fullscreen"
@@ -1286,9 +1334,18 @@ msgstr "Eksport"
 msgid "Export your resume to PDF instantly, without any waiting or delays."
 msgstr "Rezyumeni PDF formatiga darhol, hech qanday kutish yoki kechikishlarsiz eksport qiling."
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Failed"
+msgstr "Muvaffaqiyatsiz"
+
 #: src/routes/builder/$resumeId/-sidebar/right/sections/resume-analysis.tsx
 msgid "Failed to analyze resume."
 msgstr "Rezyumeni tahlil qilish muvaffaqiyatsiz bo'ldi."
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
+msgid "Failed to archive thread."
+msgstr "Mavzu arxivlanmadi."
 
 #. Fallback toast when creating an API key fails
 #: src/dialogs/api-key/create.tsx
@@ -1305,10 +1362,19 @@ msgstr "Hisobingizni yaratish muvaffaqiyatsiz tugadi. Iltimos, yana urinib ko'ri
 msgid "Failed to delete passkey. Please try again."
 msgstr "Parol kalitini o'chirib tashlash muvaffaqiyatsiz bo'ldi. Iltimos, yana urinib ko'ring."
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Failed to delete provider."
+msgstr "Provayderni o'chirib bo'lmadi."
+
 #. Fallback toast when deleting an API key fails
 #: src/routes/dashboard/settings/api-keys.tsx
 msgid "Failed to delete the API key. Please try again."
 msgstr "API kalitini o'chirib tashlash muvaffaqiyatsiz tugadi. Iltimos, yana urinib ko'ring."
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
+msgid "Failed to delete thread."
+msgstr "Mavzuni o'chirib bo'lmadi."
 
 #. Fallback toast when account deletion fails
 #: src/routes/dashboard/settings/danger-zone.tsx
@@ -1355,6 +1421,10 @@ msgstr "Verifikatsiya elektron pochtasini qayta yuborish muvaffaqiyatsiz bo'ldi.
 msgid "Failed to reset your password. Please try again."
 msgstr "Parolingizni qayta tiklash muvaffaqiyatsiz bo'ldi. Iltimos, yana urinib ko'ring."
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Failed to save AI provider."
+msgstr "Sun'iy intellekt provayderini saqlab bo'lmadi."
+
 #. Fallback toast when requesting password reset email fails without backend message
 #: src/routes/auth/forgot-password.tsx
 msgid "Failed to send password reset email. Please try again."
@@ -1378,15 +1448,18 @@ msgstr "Kirish amalga oshmadi. Iltimos, qayta urinib koʻring."
 msgid "Failed to sign out. Please try again."
 msgstr "Chiqish muvaffaqiyatsiz bo'ldi. Iltimos, yana urinib ko'ring."
 
-#. Fallback toast when testing AI provider connection fails
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Failed to test AI provider connection. Please try again."
-msgstr "AI provayderi ulanishini sinash muvaffaqiyatsiz bo'ldi. Iltimos, yana urinib ko'ring."
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Failed to start agent thread."
+msgstr "Agent mavzusini ishga tushirib bo'lmadi."
 
 #. Fallback toast when unlinking a social authentication provider fails
 #: src/routes/dashboard/settings/authentication/-components/hooks.tsx
 msgid "Failed to unlink provider. Please try again."
 msgstr "Provayderni bog'lanishni bekor qila olmadik. Iltimos, yana urinib ko'ring."
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Failed to update provider."
+msgstr "Provayderni yangilashda xatolik yuz berdi."
 
 #. Fallback toast when changing account password fails
 #: src/dialogs/auth/change-password.tsx
@@ -1397,6 +1470,10 @@ msgstr "Parolingizni yangilash muvaffaqiyatsiz tugadi. Iltimos, yana urinib ko'r
 #: src/routes/dashboard/settings/profile.tsx
 msgid "Failed to update your profile. Please try again."
 msgstr "Profilingizni yangilash muvaffaqiyatsiz bo'ldi. Iltimos, yana urinib ko'ring."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Failed to upload attachment."
+msgstr "Ilovani yuklashda xatolik yuz berdi."
 
 #. Fallback toast when uploading profile picture for resume fails
 #: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
@@ -1424,9 +1501,17 @@ msgstr "Kodingizni tekshirish muvaffaqiyatsiz bo'ldi. Iltimos, yana urinib ko'ri
 msgid "Features"
 msgstr "Xususiyatlar"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Fetched URL"
+msgstr "Olingan URL"
+
 #: src/routes/dashboard/resumes/index.tsx
 msgid "Filter by"
 msgstr "Saralash"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Find weak bullets and rewrite them with stronger outcomes, numbers, scope, and sharper verbs."
+msgstr "Zaif o'qlarni toping va ularni kuchliroq natijalar, raqamlar, ko'lam va aniqroq fe'llar bilan qayta yozing."
 
 #: src/libs/locale.ts
 msgid "Finnish"
@@ -1562,10 +1647,13 @@ msgstr "O‘tish..."
 msgid "Google"
 msgstr "Google"
 
-#. AI provider option label in dashboard AI settings
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Google Gemini"
 msgstr "Google Gemini"
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "gpt-4.1"
+msgstr "gpt-4.1"
 
 #: src/dialogs/resume/sections/education.tsx
 msgid "Grade"
@@ -1699,6 +1787,10 @@ msgstr "API-dan qanday foydalanaman?"
 msgid "How is my data protected?"
 msgstr "Maʼlumotlarim qanday himoyalangan?"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "https://gateway.example.com/v1"
+msgstr "https://gateway.example.com/v1"
+
 #: src/libs/locale.ts
 msgid "Hungarian"
 msgstr "Venger tili"
@@ -1707,6 +1799,10 @@ msgstr "Venger tili"
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Icon"
 msgstr "Ikonka"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Identify gaps for an applicant tracking system and apply only high-confidence keyword improvements."
+msgstr "Ariza beruvchini kuzatish tizimidagi kamchiliklarni aniqlang va faqat yuqori ishonchlilikdagi kalit so'zlarni yaxshilashni qo'llang."
 
 #: src/dialogs/resume/import.tsx
 msgid "Import"
@@ -1725,6 +1821,10 @@ msgstr "Rezyumengiz import qilinmoqda..."
 #: src/dialogs/resume/import.tsx
 msgid "Importing..."
 msgstr "Import..."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Increase zoom"
+msgstr "Masshtabni oshirish"
 
 #: src/libs/locale.ts
 msgid "Indonesian"
@@ -1758,10 +1858,9 @@ msgstr "Integratsiyalar"
 msgid "Interests"
 msgstr "Qiziqishlar"
 
-#. Error shown when AI provider credentials or base URL are invalid in AI settings
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Invalid AI provider configuration. Please check your settings."
-msgstr "AI provayderi konfiguratsiyasi noto'g'ri. Iltimos, sozlamalaringizni tekshiring."
+msgid "Invalid AI provider configuration."
+msgstr "Noto'g'ri AI provayder konfiguratsiyasi."
 
 #: src/routes/_home/-sections/faq.tsx
 msgid "Is Reactive Resume available in multiple languages?"
@@ -1825,6 +1924,10 @@ msgstr "Harflarni kengaytirib tekislash"
 msgid "Kannada"
 msgstr "Kannada tili"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Key"
+msgstr "Kalit"
+
 #: src/dialogs/resume/sections/interest.tsx
 #: src/dialogs/resume/sections/skill.tsx
 msgid "Keywords"
@@ -1840,6 +1943,7 @@ msgstr "Koreys tili"
 
 #. Short field label for custom display text associated with a URL
 #: src/components/input/url-input.tsx
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Label"
 msgstr "Yorliq"
 
@@ -1960,9 +2064,27 @@ msgstr "Roʻyxat"
 msgid "Lithuanian"
 msgstr "Litva tili"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Loading agent workspace..."
+msgstr "Agent ish maydoni yuklanmoqda..."
+
+#: src/dialogs/resume/import.tsx
+msgid "Loading AI providers. Please try again in a moment."
+msgstr "Sun'iy intellekt provayderlari yuklanmoqda. Iltimos, bir zumda qayta urinib ko'ring."
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Loading providers..."
+msgstr "Provayderlar yuklanmoqda..."
+
 #: src/components/command-palette/pages/resumes.tsx
+#: src/routes/agent/-components/new-thread-setup.tsx
 msgid "Loading resumes..."
 msgstr "Rezyumelar yuklanmoqda..."
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+msgid "Loading threads..."
+msgstr "Mavzular yuklanmoqda..."
 
 #: src/components/layout/loading-screen.tsx
 msgid "Loading..."
@@ -2011,6 +2133,10 @@ msgstr "Asosiy"
 msgid "Main navigation"
 msgstr "Asosiy navigatsiya"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Make the experience section more results-oriented and remove vague responsibilities."
+msgstr "Tajriba bo'limini natijaga yo'naltirilgan qiling va noaniq mas'uliyatlarni olib tashlang."
+
 #: src/libs/locale.ts
 msgid "Malay"
 msgstr "Malay tili"
@@ -2041,13 +2167,13 @@ msgstr "O'rta"
 msgid "Microsoft Word"
 msgstr "Microsoft Word"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Missing working resume"
+msgstr "Ishchi rezyume yo'q"
+
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Model"
 msgstr "Model"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "More proposal actions"
-msgstr "Ko'proq takliflar"
 
 #: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
 msgid "Move to"
@@ -2074,10 +2200,6 @@ msgstr "https:// bilan boshlanishi kerak."
 #: src/routes/dashboard/settings/profile.tsx
 msgid "Name"
 msgstr "Ism"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Needs review"
-msgstr "Ko'rib chiqish kerak"
 
 #: src/libs/locale.ts
 msgid "Nepali"
@@ -2109,9 +2231,9 @@ msgstr "Yangi parol"
 msgid "New Section"
 msgstr "Yangi bo'lim"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Next"
-msgstr "Keyingi"
+#: src/routes/agent/-components/thread-sidebar.tsx
+msgid "New thread"
+msgstr "Yangi mavzu"
 
 #: src/routes/_home/-sections/features.tsx
 msgid "No Advertising, No Tracking"
@@ -2130,6 +2252,14 @@ msgstr "Hali hech qanday kirish kalitlari ro'yxatdan o'tmagan."
 msgid "No results found."
 msgstr "Hech qanday natija topilmadi."
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "No tested provider"
+msgstr "Sinovdan o'tgan provayder yo'q"
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+msgid "No threads yet."
+msgstr "Hali hech qanday mavzu yo'q."
+
 #: src/libs/locale.ts
 msgid "Norwegian"
 msgstr "Norveg tili"
@@ -2142,7 +2272,6 @@ msgstr "Eslatmalar"
 msgid "Odia"
 msgstr "Odiya tili"
 
-#. AI provider option label in dashboard AI settings
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Ollama"
 msgstr "Ollama"
@@ -2163,17 +2292,17 @@ msgid "Open"
 msgstr "Ochiq"
 
 #: src/routes/builder/$resumeId/-components/dock.tsx
-msgid "Open AI assistant"
-msgstr "Ochiq AI yordamchisi"
+msgid "Open AI agent"
+msgstr "Ochiq AI agenti"
 
 #. Button label to open the user's default email app
 #: src/routes/auth/forgot-password.tsx
 msgid "Open Email Client"
 msgstr "Pochta dasturini ochish"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Open Integrations"
-msgstr "Ochiq integratsiyalar"
+#: src/routes/agent/$threadId.tsx
+msgid "Open in builder"
+msgstr "Quruvchida ochish"
 
 #: src/routes/builder/$resumeId/-sidebar/right/sections/resume-analysis.tsx
 msgid "Open Integrations Settings"
@@ -2183,12 +2312,14 @@ msgstr "Integratsiyalar sozlamalarini oching"
 msgid "Open Source"
 msgstr "Ochiq kodli"
 
-#. AI provider option label in dashboard AI settings
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "OpenAI"
 msgstr "Ochiq AI"
 
-#. AI provider option label in dashboard AI settings
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "OpenAI-compatible"
+msgstr "OpenAI bilan mos keladi"
+
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "OpenRouter"
 msgstr "Ochiq marshrutizator"
@@ -2287,6 +2418,30 @@ msgstr "Parol bilan himoya o'chirildi."
 msgid "Password protection has been enabled."
 msgstr "Parol bilan himoya yoqildi."
 
+#: src/routes/agent/$threadId.tsx
+msgid "Patch applied"
+msgstr "Yamoq qo'llanildi"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Patch conflicted"
+msgstr "Yamoq ziddiyatli"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Patch failed"
+msgstr "Yamoq bajarilmadi"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Patch pending"
+msgstr "Yamoq kutilmoqda"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Patch reverted"
+msgstr "Yamoq qaytarildi"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Patch reverted."
+msgstr "Yamoq qaytarildi."
+
 #. File format label in import source selector
 #: src/dialogs/resume/import.tsx
 msgid "PDF"
@@ -2333,6 +2488,7 @@ msgid "Please support the project"
 msgstr "Iltimos, loyihani qo'llab-quvvatlang"
 
 #: src/routes/$username/-components/public-resume.tsx
+#: src/routes/agent/$threadId.tsx
 #: src/routes/builder/$resumeId/-components/dock.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
 msgid "Please wait while your PDF is being generated..."
@@ -2367,9 +2523,9 @@ msgstr "Lavozim"
 msgid "Preferences"
 msgstr "Afzalliklar"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Preparing changes"
-msgstr "O'zgarishlarni tayyorlash"
+#: src/routes/agent/$threadId.tsx
+msgid "Prepare a conservative patch that improves clarity without changing my career narrative."
+msgstr "Karyera hikoyamni o'zgartirmasdan aniqlikni oshiradigan konservativ yamoq tayyorlang."
 
 #: src/components/input/color-picker.tsx
 msgid "Presets"
@@ -2383,10 +2539,6 @@ msgstr "Joriy kalit soʻzni qoʻshish yoki saqlash uchun <0>{RETURN_KEY}</0> yok
 #: src/components/command-palette/pages/resumes.tsx
 msgid "Press <0>Enter</0> to open"
 msgstr "Ochish uchun <0>Enter tugmasini</0> bosing"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Prev"
-msgstr "Oldingi"
 
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Primary Color"
@@ -2418,11 +2570,6 @@ msgstr "Progres paneli"
 msgid "Projects"
 msgstr "Loyihalar"
 
-#. placeholder {0}: index + 1
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Proposal {0} of {total}"
-msgstr "{total} taklifidan {0}"
-
 #: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
 msgid "Protect your resume from unauthorized access with a password"
 msgstr "Rezyumeni ruxsatsiz kirishdan parol orqali himoya qiling"
@@ -2435,6 +2582,10 @@ msgstr "Rezyumeingizni parol bilan himoya qiling va faqat parolga ega odamlar un
 msgid "Provider"
 msgstr "Provayder"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Provider connection verified."
+msgstr "Provayder ulanishi tasdiqlandi."
+
 #: src/dialogs/resume/sections/custom.tsx
 #: src/libs/resume/section-title.ts
 #: src/libs/resume/section.tsx
@@ -2444,10 +2595,6 @@ msgstr "Nashrlar"
 #: src/dialogs/resume/sections/publication.tsx
 msgid "Publisher"
 msgstr "Nashriyotchi"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Raw JSON Patch"
-msgstr "Xom JSON yamoq"
 
 #: src/routes/_home/-sections/header.tsx
 msgid "Reactive Resume - Go to homepage"
@@ -2514,18 +2661,6 @@ msgstr "Yangilash"
 msgid "Register New Device"
 msgstr "Yangi qurilmani ro'yxatdan o'tkazish"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Reject"
-msgstr "Rad etish"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Reject all"
-msgstr "Hammasini rad etish"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Rejected proposal"
-msgstr "Rad etilgan taklif"
-
 #: src/routes/auth/forgot-password.tsx
 msgid "Remember your password? <0/>"
 msgstr "Parolingizni eslaysizmi? <0/>"
@@ -2576,10 +2711,6 @@ msgstr "Tasdiqlash xati qayta yuborilmoqda..."
 msgid "Reset"
 msgstr "Tiklash"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Reset chat"
-msgstr "Chatni qayta tiklash"
-
 #. Primary action button label on reset-password form
 #: src/routes/auth/reset-password.tsx
 msgid "Reset Password"
@@ -2593,13 +2724,13 @@ msgstr "Parolingizni tiklang"
 msgid "Resetting your password..."
 msgstr "Parolingiz tiklanmoqda..."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Resize AI assistant"
-msgstr "Sun'iy intellekt yordamchisining o'lchamini o'zgartirish"
-
 #: src/routes/_home/-sections/footer.tsx
 msgid "Resources"
 msgstr "Resurslar"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Resume"
+msgstr "Rezyume; qayta boshlash"
 
 #: src/libs/resume/section.tsx
 msgid "Resume Analysis"
@@ -2609,6 +2740,10 @@ msgstr "Rezyume tahlili"
 msgid "Resume analysis complete."
 msgstr "Rezyume tahlili yakunlandi."
 
+#: src/routes/agent/$threadId.tsx
+msgid "Resume patch"
+msgstr "Rezyume yamoqlari"
+
 #: src/components/command-palette/pages/navigation.tsx
 #: src/components/command-palette/pages/resumes.tsx
 #: src/routes/_home/-sections/statistics.tsx
@@ -2617,13 +2752,25 @@ msgstr "Rezyume tahlili yakunlandi."
 msgid "Resumes"
 msgstr "Rezyumelar"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Review required"
-msgstr "Ko'rib chiqish talab qilinadi"
+#: src/routes/agent/$threadId.tsx
+msgid "Retry"
+msgstr "Qayta urinish"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Reviewed proposals"
-msgstr "Ko'rib chiqilgan takliflar"
+#: src/routes/agent/$threadId.tsx
+msgid "Revert"
+msgstr "Qaytarish"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Review the resume against a job description and ask me questions before changing uncertain sections."
+msgstr "Rezyumeni ish tavsifi bilan taqqoslang va noaniq bo'limlarni o'zgartirishdan oldin menga savollar bering."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Rework the summary so it targets a senior engineering manager role without sounding generic."
+msgstr "Xulosa umumiy ko'rinmasdan, katta muhandislik menejeri lavozimiga yo'naltirilgan bo'lishi uchun uni qayta ishlang."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Rewrite this resume for a startup founder-to-product-lead transition with clear business impact."
+msgstr "Ushbu rezyumeni aniq biznesga ta'sir ko'rsatadigan startap asoschisidan mahsulotga yetakchi o'tish bosqichi uchun qayta yozing."
 
 #: src/components/input/rich-input.tsx
 msgid "Right Align"
@@ -2674,6 +2821,10 @@ msgstr "Saqlash"
 msgid "Save Changes"
 msgstr "Oʻzgarishlarni saqlash"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Save Provider"
+msgstr "Provayderni saqlang"
+
 #: src/dialogs/auth/enable-two-factor.tsx
 msgid "Scan the QR code below with your preferred authenticator app. You can also copy the secret below and paste it into your app."
 msgstr "Quyidagi QR kodni o'zingiz yoqtirgan autentifikatsiya ilovasi bilan skanerlang. Shuningdek, quyidagi maxfiy kodni nusxalab, ilovaga joylashtirishingiz mumkin."
@@ -2715,6 +2866,26 @@ msgstr "Maxfiy kod buferga nusxalandi."
 msgid "Section Type"
 msgstr "Bo'lim turi"
 
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Select a resume"
+msgstr "Rezyumeni tanlang"
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Select a tested provider"
+msgstr "Sinovdan o'tgan provayderni tanlang"
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Select a tested provider before starting a thread."
+msgstr "Mavzuni boshlashdan oldin sinovdan o'tgan provayderni tanlang."
+
+#: src/routes/agent/index.tsx
+msgid "Select a thread"
+msgstr "Mavzuni tanlang"
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Select an agent model"
+msgstr "Agent modelini tanlang"
+
 #: src/components/ui/combobox.tsx
 msgid "Select..."
 msgstr "Tanlang..."
@@ -2723,9 +2894,9 @@ msgstr "Tanlang..."
 msgid "Self-Host with Docker"
 msgstr "Docker bilan mustaqil joylashtirish"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Send"
-msgstr "Yuborish"
+#: src/routes/agent/$threadId.tsx
+msgid "Send message"
+msgstr "Xabar yuborish"
 
 #. Primary action button label on forgot-password form
 #: src/routes/auth/forgot-password.tsx
@@ -2735,10 +2906,6 @@ msgstr "Parolni tiklash uchun email jo‘natish"
 #: src/routes/auth/forgot-password.tsx
 msgid "Sending password reset email..."
 msgstr "Parol tiklash uchun email yuborilmoqda..."
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Sending request"
-msgstr "So'rov yuborilmoqda"
 
 #: src/components/input/rich-input.tsx
 msgid "Separator"
@@ -2754,6 +2921,7 @@ msgid "Set Password"
 msgstr "Parol o‘rnatish"
 
 #: src/components/command-palette/pages/navigation.tsx
+#: src/routes/agent/-components/new-thread-setup.tsx
 #: src/routes/dashboard/-components/sidebar.tsx
 msgid "Settings"
 msgstr "Sozlamalar"
@@ -2965,6 +3133,14 @@ msgstr "GitHubda bizni yulduzlang (yangi tabda ochiladi)"
 msgid "Star us on GitHub, currently {0} stars (opens in new tab)"
 msgstr "GitHubda bizni yulduzlang, hozirda {0} ta yulduz (yangi tabda ochiladi)"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Start a new thread"
+msgstr "Yangi mavzuni boshlang"
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Start a thread"
+msgstr "Mavzuni boshlang"
+
 #: src/dialogs/resume/index.tsx
 msgid "Start building your resume by giving it a name."
 msgstr "Rezyumeni yaratishni unga nom berishdan boshlang."
@@ -2974,6 +3150,14 @@ msgstr "Rezyumeni yaratishni unga nom berishdan boshlang."
 msgid "Start building your resume from scratch"
 msgstr "Rezyumeni nolldan boshlang va yarating"
 
+#: src/routes/agent/index.tsx
+msgid "Start new thread"
+msgstr "Yangi mavzuni boshlash"
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Start Thread"
+msgstr "Mavzuni boshlash"
+
 #: src/libs/resume/section.tsx
 msgid "Statistics"
 msgstr "Statistika"
@@ -2982,9 +3166,9 @@ msgstr "Statistika"
 msgid "Stay"
 msgstr "Qolish"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Stop"
-msgstr "STOP"
+#: src/routes/agent/$threadId.tsx
+msgid "Stop generation"
+msgstr "Avlodni to'xtatish"
 
 #: src/routes/builder/$resumeId/-sidebar/right/sections/resume-analysis.tsx
 msgid "Strengths"
@@ -3043,6 +3227,10 @@ msgstr "Teglar"
 msgid "Tags can be used to categorize your resume by keywords."
 msgstr "Teglar rezyumeningizni kalit so'zlar orqali toifalash uchun ishlatilishi mumkin."
 
+#: src/routes/agent/$threadId.tsx
+msgid "Tailor this resume to a product manager job description and emphasize roadmap ownership, stakeholder communication, and measurable launch outcomes."
+msgstr "Ushbu rezyumeni mahsulot menejeri lavozim tavsifiga moslashtiring va yo'l xaritasi egaligi, manfaatdor tomonlar bilan aloqa va o'lchanadigan ishga tushirish natijalariga urg'u bering."
+
 #: src/libs/locale.ts
 msgid "Tamil"
 msgstr "Tamil tili"
@@ -3064,8 +3252,12 @@ msgid "Templates"
 msgstr "Andozalar"
 
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Test Connection"
-msgstr "Ulanishni tekshirish"
+msgid "Test"
+msgstr "Sinov"
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Tested"
+msgstr "Sinovdan o'tgan"
 
 #: src/routes/_home/-sections/testimonials.tsx
 msgid "Testimonials"
@@ -3080,13 +3272,9 @@ msgstr "Matn rangi"
 msgid "Thai"
 msgstr "Tay tili"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "The AI proposed a change that no longer applies to this resume."
-msgstr "AI endi ushbu rezyumega taalluqli bo'lmagan o'zgartirishni taklif qildi."
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "The AI returned a proposal that could not be previewed."
-msgstr "Sun'iy intellekt oldindan ko'rib chiqilmagan taklifni qaytardi."
+#: src/routes/agent/$threadId.tsx
+msgid "The agent needs your input."
+msgstr "Agent sizning fikringizni bilishi kerak."
 
 #. Error description when AI returns invalid resume analysis format
 #: src/routes/builder/$resumeId/-sidebar/right/sections/resume-analysis.tsx
@@ -3100,10 +3288,6 @@ msgstr "API kaliti muvaffaqiyatli oʻchirildi."
 #: src/routes/dashboard/settings/api-keys.tsx
 msgid "The API key will no longer be able to access your data after deletion. This action cannot be undone."
 msgstr "Oʻchirilgandan soʻng API kaliti endi maʼlumotlaringizga kira olmaydi. Bu amalni bekor qilib boʻlmaydi."
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "The assistant stopped before returning a proposal."
-msgstr "Yordamchi taklifni qaytarishdan oldin to'xtadi."
 
 #. Empty-state message when no command palette results match the search query
 #: src/components/command-palette/index.tsx
@@ -3127,6 +3311,10 @@ msgstr "Siz kirishga harakat qilayotgan rezyume parol bilan himoyalangan"
 msgid "The URL you entered is not valid."
 msgstr "Kiritilgan URL haqiqiy emas."
 
+#: src/routes/agent/$threadId.tsx
+msgid "The working resume was deleted. This thread is read-only."
+msgstr "Ishchi rezyume o'chirildi. Bu mavzu faqat o'qish uchun."
+
 #. Menu item that opens appearance theme selection submenu
 #: src/components/command-palette/pages/preferences/theme.tsx
 #: src/components/user/dropdown-menu.tsx
@@ -3144,10 +3332,15 @@ msgid "There was a problem while generating the DOCX, please try again."
 msgstr "DOCX faylini yaratishda muammo yuzaga keldi, iltimos, yana urinib ko'ring."
 
 #: src/routes/$username/-components/public-resume.tsx
+#: src/routes/agent/$threadId.tsx
 #: src/routes/builder/$resumeId/-components/dock.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
 msgid "There was a problem while generating the PDF, please try again."
 msgstr "PDF faylini yaratishda muammo yuz berdi, iltimos, qaytadan urinib ko'ring."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Thinking"
+msgstr "Fikrlash"
 
 #: src/routes/builder/$resumeId/-components/header.tsx
 #: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
@@ -3159,9 +3352,21 @@ msgstr "Bu amalni bekor qilib boʻlmaydi."
 msgid "This action cannot be undone. All your data will be permanently deleted."
 msgstr "Bu amalni bekor qilib boʻlmaydi. Barcha ma'lumotlaringiz abadiy oʻchiriladi."
 
+#: src/routes/agent/$threadId.tsx
+msgid "This action cannot be undone. Conversation messages and uploaded attachments will be removed. The working resume draft remains in your dashboard and can be deleted separately."
+msgstr "Bu amalni bekor qilib bo'lmaydi. Suhbat xabarlari va yuklangan qo'shimchalar olib tashlanadi. Ishlayotgan rezyume qoralamasi boshqaruv panelingizda qoladi va alohida o'chirilishi mumkin."
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+msgid "This action cannot be undone. Messages and thread attachments will be removed."
+msgstr "Bu amalni bekor qilib bo'lmaydi. Xabarlar va mavzu qo'shimchalari olib tashlanadi."
+
+#: src/routes/agent/$threadId.tsx
+msgid "This agent thread could not be opened."
+msgstr "Bu agent mavzusini ochib bo'lmadi."
+
 #: src/dialogs/resume/import.tsx
-msgid "This feature requires AI Integration to be enabled. Please enable it in the settings."
-msgstr "Bu funksiya uchun AI integratsiyasi yoqilgan boʻlishi kerak. Iltimos, sozlamalardan uni yoqing."
+msgid "This feature requires a tested AI provider. Please add one in the settings."
+msgstr "Bu funksiya sinovdan o'tgan AI provayderini talab qiladi. Iltimos, sozlamalardan birini qo'shing."
 
 #: src/dialogs/resume/index.tsx
 msgid "This is a URL-friendly name for your resume."
@@ -3171,12 +3376,7 @@ msgstr "Bu rezyume uchun URL uchun qulay ism."
 msgid "This may take a few minutes, depending on the response of the AI provider. Please do not close the window or refresh the page."
 msgstr "Bu AI provayderining javobiga qarab bir necha daqiqa davom etishi mumkin. Iltimos, oynani yoping yoki sahifani yangilamang."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "This proposal is stale. Ask the assistant to regenerate it from the latest resume."
-msgstr "Bu taklif eskirgan. Yordamchidan uni so'nggi rezyumedan qayta yaratishini so'rang."
-
 #: src/components/resume/builder-resume-draft.ts
-#: src/routes/builder/$resumeId/-components/assistant.tsx
 msgid "This resume is locked and cannot be updated."
 msgstr "Ushbu rezyume bloklangan va yangilab boʻlmaydi."
 
@@ -3187,6 +3387,18 @@ msgstr "Bu bo'lim faqat ushbu rezyumega xos shaxsiy eslatmalaringiz uchun moʻlj
 #: src/routes/auth/register.tsx
 msgid "This step is optional, but recommended."
 msgstr "Bu bosqich ixtiyoriy, ammo tavsiya etiladi."
+
+#: src/routes/agent/$threadId.tsx
+msgid "This thread is archived. New messages cannot be sent."
+msgstr "Bu mavzu arxivlangan. Yangi xabarlarni yuborib bo'lmaydi."
+
+#: src/routes/agent/$threadId.tsx
+msgid "This thread is read-only"
+msgstr "Bu mavzu faqat o'qish uchun"
+
+#: src/routes/agent/$threadId.tsx
+msgid "This thread is read-only because the working resume or AI provider is unavailable."
+msgstr "Ushbu mavzu faqat o'qish uchun mo'ljallangan, chunki ishlaydigan rezyume yoki AI provayderi mavjud emas."
 
 #: src/dialogs/api-key/create.tsx
 msgid "This will generate a new API key to access the Reactive Resume API to allow machines to interact with your resume data."
@@ -3199,6 +3411,28 @@ msgstr "Agar bir nechta passkey bo'lishni rejalashtirsangiz, bu keyinchalik uni 
 #: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
 msgid "This will remove all items from this section."
 msgstr "Bu bo'limdagi barcha elementlarni o'chirib tashlaydi."
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
+msgid "Thread actions"
+msgstr "Mavzu harakatlari"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Thread archived."
+msgstr "Mavzu arxivlandi."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Thread deleted."
+msgstr "Mavzu o'chirildi."
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
+msgid "Threads"
+msgstr "Mavzular"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Tighten the skills section so it supports the target role instead of reading like a keyword dump."
+msgstr "Kalit so'zlarni o'qish o'rniga, maqsadli rolni qo'llab-quvvatlaydigan qilib, ko'nikmalar bo'limini qisqartiring."
 
 #: src/routes/_home/-sections/hero.tsx
 msgid "Timelapse demonstration of building a resume with Reactive Resume"
@@ -3232,10 +3466,18 @@ msgstr "Chap yon panelni yoqish/o'chirish"
 msgid "Toggle page stacking"
 msgstr "Sahifalarni joylashtirishni yoqish/o'chirish"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Toggle resume preview"
+msgstr "Rezyume oldindan ko'rishni yoqish/o'chirish"
+
 #. Screen-reader label for opening or closing the right sidebar in resume builder
 #: src/routes/builder/$resumeId/-components/header.tsx
 msgid "Toggle right sidebar"
 msgstr "O'ng yon panelni yoqish/o'chirish"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Toggle threads"
+msgstr "Mavzularni ochish/o'chirish"
 
 #: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
 msgid "Track your resume's views and downloads"
@@ -3357,6 +3599,10 @@ msgstr "Blokdan chiqarish"
 msgid "Unnamed passkey"
 msgstr "Noma nomaqotirish kaliti"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Untested"
+msgstr "Sinovdan o'tmagan"
+
 #: src/routes/dashboard/settings/profile.tsx
 msgid "Unverified"
 msgstr "Tasdiqlanmagan"
@@ -3437,6 +3683,10 @@ msgstr "Mavjud ko'ngilli tajribani yangilash"
 msgid "Update Password"
 msgstr "Parolni yangilash"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Update project bullets to show leadership, constraints, tradeoffs, and measurable outcomes."
+msgstr "Yetakchilik, cheklovlar, murosaga kelish va o'lchanadigan natijalarni ko'rsatish uchun loyiha jadvallarini yangilang."
+
 #: src/dialogs/resume/index.tsx
 msgid "Update Resume"
 msgstr "Rezyumeni yangilash"
@@ -3467,6 +3717,10 @@ msgstr "Rasm yuklanmoqda..."
 msgid "URL"
 msgstr "URL"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Use"
+msgstr "Foydalanish"
+
 #: src/components/input/color-picker.tsx
 msgid "Use color {color}"
 msgstr "Rangdan foydalaning {color}"
@@ -3490,7 +3744,6 @@ msgstr "O'zbek tili"
 msgid "Valid URLs must start with http:// or https://."
 msgstr "Toʻgʻri URL http:// yoki https:// bilan boshlanishi kerak."
 
-#. AI provider option label in dashboard AI settings
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Vercel AI Gateway"
 msgstr "Vercel AI Gateway"
@@ -3541,6 +3794,10 @@ msgstr "Ko‘rishlar"
 msgid "Volunteer"
 msgstr "Ko‘ngillilar"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Waiting for fetch result..."
+msgstr "Natijani olish kutilmoqda..."
+
 #: src/dialogs/resume/sections/award.tsx
 #: src/dialogs/resume/sections/certification.tsx
 #: src/dialogs/resume/sections/education.tsx
@@ -3553,6 +3810,10 @@ msgstr "Ko‘ngillilar"
 #: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
 msgid "Website"
 msgstr "Veb-sayt"
+
+#: src/routes/agent/$threadId.tsx
+msgid "What do you want to do?"
+msgstr "Nima qilmoqchisiz?"
 
 #: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
 msgid "What do you want to rename this section to?"
@@ -3571,6 +3832,14 @@ msgstr "So‘nggi versiyada nima yangiliklar bor?"
 #: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
 msgid "When locked, the resume cannot be updated or deleted."
 msgstr "Qulfda bo‘lsa, rezyumeni yangilash yoki o‘chirish mumkin emas."
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Work OpenAI"
+msgstr "OpenAI bilan ishlang"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Working..."
+msgstr "Ishlamoqda..."
 
 #: src/routes/_home/-sections/footer.tsx
 msgid "X (Twitter)"
@@ -3620,10 +3889,6 @@ msgstr "O'zgartirishlaringiz avtomatik tarzda saqlanadi."
 #: src/routes/_home/-sections/features.tsx
 msgid "Your data is secure, and never shared or sold to anyone."
 msgstr "Maʼlumotlaringiz xavfsiz va hech qachon boshqalarga berilmaydi yoki sotilmaydi."
-
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Your data is stored locally"
-msgstr "Maʼlumotlaringiz lokal tarzda saqlanadi"
 
 #: src/routes/_home/-sections/faq.tsx
 msgid "Your data is stored securely and is never shared with third parties. You can also self-host Reactive Resume on your own servers for complete control over your data."
@@ -3679,6 +3944,10 @@ msgstr "Sizning yordamingiz loyihaning har doim bepul bo‘lishi va har kim uchu
 msgid "Zoom in"
 msgstr "Kattalashtirish"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Zoom level"
+msgstr "Masshtablash darajasi"
+
 #: src/routes/builder/$resumeId/-components/dock.tsx
 msgid "Zoom out"
 msgstr "Kichraytirish"
@@ -3686,4 +3955,3 @@ msgstr "Kichraytirish"
 #: src/libs/locale.ts
 msgid "Zulu"
 msgstr "Zulu"
-

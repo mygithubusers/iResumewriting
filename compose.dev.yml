@@ -78,7 +78,7 @@ services:
       retries: 3
 
   redis:
-    image: redis:7-alpine
+    image: redis:latest
     restart: unless-stopped
     command: redis-server --appendonly yes
     volumes:

@@ -4,6 +4,50 @@ description: "List of all notable changes and updates to Reactive Resume"
 rss: true
 ---
 
+<Update label="v5.1.4" description="14th May 2026">
+<Note>
+  **Self-hosters using AI features:** saved AI providers now require `ENCRYPTION_SECRET`, and the new AI Agent
+  workspace also requires `REDIS_URL`. Agent attachments require S3-compatible storage for private objects; local
+  filesystem storage still works for the rest of the app, but rejects private agent attachments.
+</Note>
+
+## Highlights
+
+- **New AI Agent workspace.** Added a dedicated full-screen Agent workspace for working on isolated AI draft copies of resumes. Threads include a sidebar, chat, tool activity, file attachments, and a read-only resume preview with PDF download support. [#3062](https://github.com/amruthpillai/reactive-resume/pull/3062)
+
+<img src="/images/guides/using-ai-agent/screenshot-2.webp" alt="AI Agent workspace showing thread sidebar, chat, and resume preview" />
+
+- **Reviewable and reversible agent edits.** Agent-applied resume patches now appear as expandable tool activity, with raw JSON Patch details, operation summaries, revert support, and clear conflict handling when the resume has changed. [#3062](https://github.com/amruthpillai/reactive-resume/pull/3062)
+
+<img src="/images/guides/ai-agent-tools/screenshot-1.webp" alt="AI Agent chat showing an applied patch with raw JSON details" />
+
+- **Public resumes now render with PDF.js.** Public resume pages now use the PDF.js-based viewer path, improving parity between the public page, builder preview, and exported PDF. [#3061](https://github.com/amruthpillai/reactive-resume/pull/3061)
+
+## AI & Agent Workflows
+
+- Added server-side AI provider management with encrypted credentials, provider testing, and provider/model capability checks. This replaces the old local AI store and keeps AI configuration centralized. [#3062](https://github.com/amruthpillai/reactive-resume/pull/3062)
+- Added Agent tools for reading resume drafts, fetching public URLs, reading supported attachments, asking follow-up questions, and applying JSON Patch updates to the AI draft. [#3062](https://github.com/amruthpillai/reactive-resume/pull/3062)
+- Added archive and delete actions for Agent threads, including read-only archived states, in-flight run cleanup when archiving, and ownership checks before destructive deletion. [#3062](https://github.com/amruthpillai/reactive-resume/pull/3062)
+- Added attachment upload rate limits, private S3 ACLs for Agent attachments, runtime validation for streamed messages, transactional patch/action writes, and a unique message sequence index for safer Agent runs. [#3062](https://github.com/amruthpillai/reactive-resume/pull/3062)
+- Added `FLAG_ALLOW_UNSAFE_AI_BASE_URL` for trusted self-hosted deployments that need private or local AI provider URLs, while still restricting provider URLs to `http` or `https`. Thanks to [@SirSKillz](https://github.com/SirSKillz). [#3059](https://github.com/amruthpillai/reactive-resume/pull/3059)
+
+## Resume Rendering & Fonts
+
+- Restored legacy local font names from v5.0.x by mapping them to metric-compatible bundled web fonts, preventing upgraded resumes from unexpectedly changing line breaks, page counts, or overall layout. Thanks to [@JamesGoslings](https://github.com/JamesGoslings). [#3057](https://github.com/amruthpillai/reactive-resume/pull/3057)
+- Added metric-compatible aliases for `Times New Roman`, `Cambria`, `Arial`, `Garamond`, and `Calibri`, including Carlito as the Calibri-compatible target. [#3057](https://github.com/amruthpillai/reactive-resume/pull/3057)
+- Improved resume preview spacing normalization and added focused coverage for the public PDF viewer and preview helpers. [#3061](https://github.com/amruthpillai/reactive-resume/pull/3061), [#3062](https://github.com/amruthpillai/reactive-resume/pull/3062)
+
+## Self-Hosting, Docs & Maintenance
+
+- Added a development Dockerfile plus improved Compose development services and health checks for running Reactive Resume with local dependencies. [1294d3354](https://github.com/amruthpillai/reactive-resume/commit/1294d3354)
+- Updated self-hosting documentation for Redis, encrypted AI provider credentials, optional Cloudflare URL extraction, private Agent attachments, S3 path-style storage, and unsafe AI base URL behavior. [#3062](https://github.com/amruthpillai/reactive-resume/pull/3062), [#3059](https://github.com/amruthpillai/reactive-resume/pull/3059)
+- Added new and refreshed guides for the AI Agent workspace, Agent tools, AI setup, builder dock, dashboard management, importing, exporting, public sharing, and private notes. [#3062](https://github.com/amruthpillai/reactive-resume/pull/3062), [affa1d664](https://github.com/amruthpillai/reactive-resume/commit/affa1d664)
+- Removed a stale Custom CSS documentation link now that custom CSS is no longer part of the v5.1 renderer flow. [#3056](https://github.com/amruthpillai/reactive-resume/pull/3056)
+- Added a Reactive Resume design system reference and updated dependencies across the workspace. [#3062](https://github.com/amruthpillai/reactive-resume/pull/3062)
+
+**Full Changelog**: [v5.1.3...v5.1.4](https://github.com/amruthpillai/reactive-resume/compare/v5.1.3...v5.1.4)
+</Update>
+
 <Update label="v5.1.3" description="13th May 2026">
 ## Highlights
 

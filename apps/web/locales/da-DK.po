@@ -8,7 +8,7 @@ msgstr ""
 "Language: da\n"
 "Project-Id-Version: reactive-resume\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-05-13 06:05\n"
+"PO-Revision-Date: 2026-05-14 13:57\n"
 "Last-Translator: \n"
 "Language-Team: Danish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -47,11 +47,6 @@ msgstr "{0, plural, one {# element} other {# elementer}}"
 #: src/routes/builder/$resumeId/-sidebar/left/sections/experience.tsx
 msgid "{0, plural, one {# role} other {# roles}}"
 msgstr "{0, plural, one {# rolle} other {# roller}}"
-
-#. placeholder {0}: resolutions.length
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "{0} proposals reviewed"
-msgstr "{0} forslag gennemgået"
 
 #: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
 #: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
@@ -123,18 +118,6 @@ msgstr "A4"
 #: src/routes/_home/-sections/faq.tsx
 msgid "Absolutely! You can export your resume to PDF with a single click. The exported PDF maintains all your formatting and styling perfectly."
 msgstr "Ja, selvfølgelig! Du kan eksportere dit CV til PDF med ét klik. Den eksporterede PDF bevarer al din formatering og styling perfekt."
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Accept"
-msgstr "Acceptere"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Accept all"
-msgstr "Accepter alle"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Accepted proposal"
-msgstr "Accepteret forslag"
 
 #: src/routes/_home/-sections/features.tsx
 msgid "Access your resumes and data programmatically using the API."
@@ -210,6 +193,14 @@ msgstr "Tilføj en ny færdighed"
 msgid "Add a new volunteer experience"
 msgstr "Tilføj en ny frivillig erfaring"
 
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Add and test a provider before starting a thread."
+msgstr "Tilføj og test en udbyder, før du starter en tråd."
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Add and test a provider before starting an agent thread."
+msgstr "Tilføj og test en udbyder, før du starter en agenttråd."
+
 #: src/components/input/rich-input.tsx
 msgid "Add Column After"
 msgstr "Tilføj kolonne efter"
@@ -230,6 +221,10 @@ msgstr "Tilføj flere roller for at vise karriereudvikling i den samme virksomhe
 msgid "Add Page"
 msgstr "Tilføj side"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Add Provider"
+msgstr "Tilføj udbyder"
+
 #: src/dialogs/resume/sections/experience.tsx
 msgid "Add Role"
 msgstr "Tilføj rolle"
@@ -242,41 +237,57 @@ msgstr "Tilføj række efter"
 msgid "Add Row Before"
 msgstr "Tilføj række før"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Adjust the resume for a remote-first role that values async communication and ownership."
+msgstr "Tilpas CV'et til en fjernstyret rolle, der værdsætter asynkron kommunikation og ejerskab."
+
 #: src/libs/locale.ts
 msgid "Afrikaans"
 msgstr "Afrikaans"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "After"
-msgstr "Efter"
+#: src/components/command-palette/pages/navigation.tsx
+msgid "Agent"
+msgstr "Agent"
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Agent ready"
+msgstr "Agent klar"
+
+#: src/routes/dashboard/-components/sidebar.tsx
+msgid "Agents"
+msgstr "Agenter"
 
 #: src/dialogs/resume/import.tsx
 msgid "AI"
 msgstr "AI"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "AI integration disabled"
-msgstr "AI-integration deaktiveret"
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "AI agent setup is unavailable right now. Please try again in a moment."
+msgstr "Opsætning af AI-agent er ikke tilgængelig lige nu. Prøv igen om et øjeblik."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "AI proposal applied."
-msgstr "AI-forslag anvendt."
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "AI agent setup is unavailable until REDIS_URL and ENCRYPTION_SECRET are configured."
+msgstr "Opsætning af AI-agent er ikke tilgængelig, før REDIS_URL og ENCRYPTION_SECRET er konfigureret."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "AI proposal rejected."
-msgstr "AI-forslag afvist."
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "AI provider management is unavailable until REDIS_URL and ENCRYPTION_SECRET are configured."
+msgstr "Administration af AI-udbydere er ikke tilgængelig, før REDIS_URL og ENCRYPTION_SECRET er konfigureret."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "AI proposals applied."
-msgstr "AI-forslag anvendt."
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "AI provider management is unavailable. Please try again."
+msgstr "Administration af AI-udbydere er ikke tilgængelig. Prøv igen."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "AI proposals rejected."
-msgstr "AI-forslag afvist."
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "AI provider saved. Test it before use."
+msgstr "AI-udbyder gemt. Test den før brug."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "AI Resume Assistant"
-msgstr "AI CV-assistent"
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "AI Providers"
+msgstr "AI-udbydere"
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "AI providers require REDIS_URL and ENCRYPTION_SECRET to be configured."
+msgstr "AI-udbydere kræver, at REDIS_URL og ENCRYPTION_SECRET konfigureres."
 
 #: src/libs/locale.ts
 msgid "Albanian"
@@ -316,7 +327,6 @@ msgstr "Analyserer..."
 msgid "And many more..."
 msgstr "Og mange flere..."
 
-#. AI provider option label in dashboard AI settings
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Anthropic Claude"
 msgstr "Antropiske Claude"
@@ -347,6 +357,10 @@ msgstr "API-nøgle"
 msgid "API Keys"
 msgstr "API-nøgler"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "API keys are encrypted on the server and never shown again after saving."
+msgstr "API-nøgler krypteres på serveren og vises aldrig igen efter lagring."
+
 #: src/routes/dashboard/settings/api-keys.tsx
 msgid "API Reference"
 msgstr "API-reference"
@@ -362,6 +376,11 @@ msgstr "Applikationsstatistik"
 #: src/libs/locale.ts
 msgid "Arabic"
 msgstr "Arabisk"
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
+msgid "Archive"
+msgstr "Arkiv"
 
 #: src/hooks/use-form-blocker.tsx
 msgid "Are you sure you want to close this dialog?"
@@ -408,25 +427,24 @@ msgid "Area of Study"
 msgstr "Studieområde"
 
 #: src/components/command-palette/pages/navigation.tsx
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Artificial Intelligence"
 msgstr "Kunstig intelligens"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Ask for a targeted resume change..."
-msgstr "Bed om en målrettet CV-ændring..."
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Ask for an incremental change"
-msgstr "Bed om en trinvis ændring"
+#: src/routes/agent/$threadId.tsx
+msgid "Ask anything about this resume"
+msgstr "Spørg om noget om dette CV"
 
 #: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
 msgid "Aspect Ratio"
 msgstr "Billedformat"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Assistant request failed"
-msgstr "Assistent-anmodning mislykkedes"
+#: src/routes/agent/$threadId.tsx
+msgid "Attach files"
+msgstr "Vedhæft filer"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Attachment uploaded."
+msgstr "Vedhæftet fil er uploadet."
 
 #: src/components/command-palette/pages/navigation.tsx
 #: src/routes/dashboard/-components/sidebar.tsx
@@ -458,6 +476,10 @@ msgstr "Aserbajdsjansk"
 msgid "Back to Login"
 msgstr "Tilbage til login"
 
+#: src/routes/agent/-components/thread-sidebar.tsx
+msgid "Back to resumes"
+msgstr "Tilbage til CV'er"
+
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Background Color"
 msgstr "Baggrundsfarve"
@@ -467,8 +489,8 @@ msgid "Backup codes copied to clipboard."
 msgstr "Backup-koder kopieret til udklipsholderen."
 
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Base URL (Optional)"
-msgstr "Basis-URL (valgfrit)"
+msgid "Base URL"
+msgstr "Basis-URL"
 
 #: src/libs/resume/section.tsx
 msgid "Basics"
@@ -478,13 +500,13 @@ msgstr "Grundlæggende"
 msgid "Beautiful templates to choose from, with more on the way."
 msgstr "Smukke skabeloner at vælge imellem, med flere på vej."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Before"
-msgstr "Før"
-
 #: src/libs/locale.ts
 msgid "Bengali"
 msgstr "Bengali"
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Blank draft"
+msgstr "Blankt udkast"
 
 #: src/routes/builder/$resumeId/-sidebar/right/sections/typography.tsx
 msgctxt "Body Text (paragraphs, lists, etc.)"
@@ -561,6 +583,10 @@ msgstr "Kan jeg eksportere mit CV til PDF?"
 msgid "Cancel"
 msgstr "Annuller"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Cannot revert; the resume has changed since this edit was applied."
+msgstr "Kan ikke fortrydes; CV'et er ændret, siden denne redigering blev anvendt."
+
 #: src/libs/locale.ts
 msgid "Catalan"
 msgstr "Katalansk"
@@ -599,6 +625,10 @@ msgstr "Fortrudt? Omdøb dit CV til noget mere beskrivende."
 msgid "Changelog"
 msgstr "Ændringslog"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Chat"
+msgstr "Snak"
+
 #: src/routes/auth/forgot-password.tsx
 msgid "Check your email for a link to reset your password."
 msgstr "Tjek din e-mail for et link til at nulstille din adgangskode."
@@ -615,10 +645,22 @@ msgstr "Kinesisk (forenklet)"
 msgid "Chinese (Traditional)"
 msgstr "Kinesisk (traditionelt)"
 
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Choose a model and resume draft."
+msgstr "Vælg en model og et udkast til CV."
+
 #. Preset or custom shade refer to the color picker
 #: src/components/input/rich-input.tsx
 msgid "Choose a preset or custom shade."
 msgstr "Vælg en forudindstillet eller brugerdefineret nuance."
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Choose a resume"
+msgstr "Vælg et CV"
+
+#: src/routes/agent/index.tsx
+msgid "Choose an existing conversation from the sidebar, or start a new draft-focused thread."
+msgstr "Vælg en eksisterende samtale fra sidebjælken, eller start en ny tråd med fokus på kladder."
 
 #: src/components/level/combobox.tsx
 msgid "Circle"
@@ -632,14 +674,6 @@ msgstr "Klar"
 #: src/dialogs/resume/import.tsx
 msgid "Click here to select a file to import"
 msgstr "Klik her for at vælge en fil, der skal importeres"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Close"
-msgstr "Luk"
-
-#: src/routes/builder/$resumeId/-components/dock.tsx
-msgid "Close AI assistant"
-msgstr "Luk AI-assistent"
 
 #: src/components/input/rich-input.tsx
 msgid "Code Block"
@@ -669,6 +703,10 @@ msgstr "Fællesskab"
 msgid "Company"
 msgstr "Virksomhed"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Compare this resume against this role URL and update keywords while keeping the voice concise and credible."
+msgstr "Sammenlign dette CV med denne stillings-URL, og opdater nøgleordene, mens du holder teksten præcis og troværdig."
+
 #: src/routes/_home/-sections/features.tsx
 msgid "Completely free, forever, no hidden costs."
 msgstr "Helt gratis, for altid, ingen skjulte omkostninger."
@@ -686,10 +724,6 @@ msgstr "Bekræft"
 #: src/routes/dashboard/settings/authentication/-components/social-provider.tsx
 msgid "Connect"
 msgstr "Forbind"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Connect and verify an AI provider before using resume editing proposals."
-msgstr "Opret forbindelse til og bekræft en AI-udbyder, før du bruger forslag til redigering af CV'er."
 
 #: src/dialogs/resume/sections/cover-letter.tsx
 #: src/dialogs/resume/sections/summary-item.tsx
@@ -717,8 +751,17 @@ msgstr "Fortsæt der, hvor du slap, ved at importere et eksisterende CV, du har 
 msgid "Contributions fund bug fixes, security updates, and continuous improvements to keep the app running smoothly."
 msgstr "Bidrag finansierer fejlrettelser, sikkerhedsopdateringer og løbende forbedringer, så appen kører problemfrit."
 
+#: src/routes/agent/$threadId.tsx
+msgid "Conversation copied."
+msgstr "Samtalen er kopieret."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Conversation JSON copied."
+msgstr "Samtalens JSON-fil kopieret."
+
 #. Action button to copy two-factor backup codes to clipboard
 #: src/dialogs/auth/enable-two-factor.tsx
+#: src/routes/agent/$threadId.tsx
 msgid "Copy"
 msgstr "Kopiér"
 
@@ -730,6 +773,10 @@ msgstr "Kopiér og gem disse backup-koder i tilfælde af, at du mister din enhed
 msgid "Copy Backup Codes"
 msgstr "Kopiér backup-koder"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Copy JSON"
+msgstr "Kopiér JSON"
+
 #: src/dialogs/api-key/create.tsx
 msgid "Copy this secret key and use it in your applications to access your data."
 msgstr "Kopiér denne hemmelige nøgle og brug den i dine applikationer for at få adgang til dine data."
@@ -738,18 +785,20 @@ msgstr "Kopiér denne hemmelige nøgle og brug den i dine applikationer for at f
 msgid "Copy URL"
 msgstr "Kopiér URL"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Could not apply the AI proposal."
-msgstr "Kunne ikke anvende AI-forslaget."
-
 #. Error description when AI provider cannot be reached during resume analysis
 #. Error shown when AI provider is unreachable during PDF/DOCX resume import
-#. Error shown when the configured AI provider cannot be reached during connection test
 #: src/dialogs/resume/import.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/resume-analysis.tsx
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Could not reach the AI provider. Please try again."
 msgstr "Kunne ikke nå AI-udbyderen. Prøv venligst igen."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Could not revert this patch."
+msgstr "Kunne ikke fortryde denne patch."
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Could not verify provider connection."
+msgstr "Kunne ikke bekræfte udbyderforbindelsen."
 
 #. Fallback title for a custom cover letter item in resume builder when recipient is empty
 #. Fallback title for a custom cover letter item in resume builder when recipient is unavailable
@@ -865,6 +914,10 @@ msgstr "Opret et eksempel-CV"
 msgid "Create as many resumes as you want, without limits."
 msgstr "Opret så mange CV'er, du vil, uden begrænsninger."
 
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Create from scratch"
+msgstr "Skab fra bunden"
+
 #. Call-to-action link from login page to account registration page
 #: src/routes/auth/login.tsx
 msgid "Create one now"
@@ -934,6 +987,10 @@ msgstr "Datasikkerhed"
 msgid "Date"
 msgstr "Dato"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Decrease zoom"
+msgstr "Reducer zoom"
+
 #: src/dialogs/resume/sections/education.tsx
 msgid "Degree"
 msgstr "Grad"
@@ -944,6 +1001,8 @@ msgstr "Grad"
 #. Passkey row action to remove the selected passkey
 #. Resume card context menu destructive action to remove a resume
 #. Resume card dropdown destructive action to remove a resume
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
 #: src/routes/builder/$resumeId/-components/header.tsx
 #: src/routes/builder/$resumeId/-sidebar/left/sections/custom.tsx
 #: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
@@ -970,6 +1029,10 @@ msgstr "Slet side"
 msgid "Delete picture"
 msgstr "Slet billede"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Delete provider"
+msgstr "Slet udbyder"
+
 #: src/components/input/rich-input.tsx
 msgid "Delete Row"
 msgstr "Slet række"
@@ -977,6 +1040,11 @@ msgstr "Slet række"
 #: src/components/input/rich-input.tsx
 msgid "Delete Table"
 msgstr "Slet tabel"
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
+msgid "Delete this agent thread?"
+msgstr "Slet denne agenttråd?"
 
 #: src/routes/dashboard/settings/danger-zone.tsx
 msgid "Deleting your account..."
@@ -1016,10 +1084,6 @@ msgstr "Deaktivér 2FA"
 #: src/dialogs/auth/disable-two-factor.tsx
 msgid "Disable Two-Factor Authentication"
 msgstr "Deaktivér to-faktor-godkendelse"
-
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Disabled"
-msgstr "Deaktiveret"
 
 #: src/dialogs/auth/disable-two-factor.tsx
 msgid "Disabling two-factor authentication..."
@@ -1081,6 +1145,7 @@ msgid "Download JSON"
 msgstr "Download JSON"
 
 #: src/routes/$username/-components/public-resume.tsx
+#: src/routes/agent/$threadId.tsx
 #: src/routes/builder/$resumeId/-components/dock.tsx
 msgid "Download PDF"
 msgstr "Download PDF"
@@ -1104,6 +1169,10 @@ msgstr "Træk og slip afsnit her for at flytte dem mellem kolonner"
 msgid "Duplicate"
 msgstr "Duplikér"
 
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Duplicate as AI Draft"
+msgstr "Dupliker som AI-kladde"
+
 #: src/dialogs/resume/index.tsx
 msgid "Duplicate Resume"
 msgstr "Duplikér CV"
@@ -1119,11 +1188,6 @@ msgstr "Duplikerer dit CV..."
 #: src/libs/locale.ts
 msgid "Dutch"
 msgstr "Hollandsk"
-
-#. Example model-name placeholder in AI settings
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "e.g., gpt-4, claude-3-opus, gemini-pro"
-msgstr "f.eks. gpt-4, claude-3-opus, gemini-pro"
 
 #: src/components/input/chip-input.tsx
 msgid "Edit"
@@ -1170,14 +1234,6 @@ msgstr "E-mailadresse"
 #: src/routes/dashboard/settings/authentication/-components/two-factor.tsx
 msgid "Enable 2FA"
 msgstr "Aktivér 2FA"
-
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Enable AI Features"
-msgstr "Aktivér AI-funktioner"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Enable AI integration"
-msgstr "Aktivér AI-integration"
 
 #: src/dialogs/auth/enable-two-factor.tsx
 msgid "Enable Two-Factor Authentication"
@@ -1239,17 +1295,9 @@ msgstr "Indtast din adgangskode for at deaktivere to-faktor-godkendelse. Din kon
 msgid "Every contribution, big or small, makes a huge difference to the project.<0/>Thank you for your support!"
 msgstr "Hvert bidrag, stort som lille, gør en stor forskel for projektet.<0/>Tak for din støtte!"
 
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Everything entered here is stored locally on your browser. Your data is only sent to the server when making a request to the AI provider, and is never stored or logged on our servers."
-msgstr "Alt hvad du indtaster her, gemmes lokalt i din browser. Dine data sendes kun til serveren, når der foretages en forespørgsel til AI-udbyderen, og de bliver aldrig gemt eller logget på vores servere."
-
 #: src/routes/_home/-sections/features.tsx
 msgid "Everything you need to create, customize, and share professional resumes. Built with privacy in mind, powered by open source, and completely free forever."
 msgstr "Alt hvad du behøver for at oprette, tilpasse og dele professionelle CV'er. Bygget med fokus på privatliv, drevet af open source og helt gratis for altid."
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Examples: rewrite the summary, tighten one experience bullet, add metrics, or adapt the resume for a job description."
-msgstr "Eksempler: omskriv resuméet, stram ét erfaringspunkt, tilføj målinger eller tilpas CV'et til en jobbeskrivelse."
 
 #: src/components/input/rich-input.tsx
 msgid "Exit Fullscreen"
@@ -1286,9 +1334,18 @@ msgstr "Eksportér"
 msgid "Export your resume to PDF instantly, without any waiting or delays."
 msgstr "Eksporter dit CV til PDF med det samme, uden ventetid eller forsinkelser."
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Failed"
+msgstr "Mislykkedes"
+
 #: src/routes/builder/$resumeId/-sidebar/right/sections/resume-analysis.tsx
 msgid "Failed to analyze resume."
 msgstr "Kunne ikke analysere CV'et."
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
+msgid "Failed to archive thread."
+msgstr "Tråden kunne ikke arkiveres."
 
 #. Fallback toast when creating an API key fails
 #: src/dialogs/api-key/create.tsx
@@ -1305,10 +1362,19 @@ msgstr "Det lykkedes ikke at oprette din konto. Prøv venligst igen."
 msgid "Failed to delete passkey. Please try again."
 msgstr "Det lykkedes ikke at slette adgangskoden. Prøv venligst igen."
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Failed to delete provider."
+msgstr "Kunne ikke slette udbyderen."
+
 #. Fallback toast when deleting an API key fails
 #: src/routes/dashboard/settings/api-keys.tsx
 msgid "Failed to delete the API key. Please try again."
 msgstr "Det lykkedes ikke at slette API-nøglen. Prøv venligst igen."
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
+msgid "Failed to delete thread."
+msgstr "Tråden kunne ikke slettes."
 
 #. Fallback toast when account deletion fails
 #: src/routes/dashboard/settings/danger-zone.tsx
@@ -1355,6 +1421,10 @@ msgstr "Kunne ikke sende bekræftelsesmail igen. Prøv venligst igen."
 msgid "Failed to reset your password. Please try again."
 msgstr "Det lykkedes ikke at nulstille din adgangskode. Prøv venligst igen."
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Failed to save AI provider."
+msgstr "Kunne ikke gemme AI-udbyderen."
+
 #. Fallback toast when requesting password reset email fails without backend message
 #: src/routes/auth/forgot-password.tsx
 msgid "Failed to send password reset email. Please try again."
@@ -1378,15 +1448,18 @@ msgstr "Login mislykkedes. Prøv venligst igen."
 msgid "Failed to sign out. Please try again."
 msgstr "Kunne ikke logge ud. Prøv venligst igen."
 
-#. Fallback toast when testing AI provider connection fails
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Failed to test AI provider connection. Please try again."
-msgstr "Det lykkedes ikke at teste AI-udbyderens forbindelse. Prøv venligst igen."
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Failed to start agent thread."
+msgstr "Agenttråden kunne ikke startes."
 
 #. Fallback toast when unlinking a social authentication provider fails
 #: src/routes/dashboard/settings/authentication/-components/hooks.tsx
 msgid "Failed to unlink provider. Please try again."
 msgstr "Det lykkedes ikke at fjerne forbindelsen til udbyderen. Prøv venligst igen."
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Failed to update provider."
+msgstr "Kunne ikke opdatere udbyderen."
 
 #. Fallback toast when changing account password fails
 #: src/dialogs/auth/change-password.tsx
@@ -1397,6 +1470,10 @@ msgstr "Det lykkedes ikke at opdatere din adgangskode. Prøv venligst igen."
 #: src/routes/dashboard/settings/profile.tsx
 msgid "Failed to update your profile. Please try again."
 msgstr "Det lykkedes ikke at opdatere din profil. Prøv venligst igen."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Failed to upload attachment."
+msgstr "Kunne ikke uploade vedhæftet fil."
 
 #. Fallback toast when uploading profile picture for resume fails
 #: src/routes/builder/$resumeId/-sidebar/left/sections/picture.tsx
@@ -1424,9 +1501,17 @@ msgstr "Det lykkedes ikke at bekræfte din kode. Prøv venligst igen."
 msgid "Features"
 msgstr "Funktioner"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Fetched URL"
+msgstr "Hentet URL"
+
 #: src/routes/dashboard/resumes/index.tsx
 msgid "Filter by"
 msgstr "Filtrér efter"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Find weak bullets and rewrite them with stronger outcomes, numbers, scope, and sharper verbs."
+msgstr "Find svage punktopstillinger og omskriv dem med stærkere udfald, tal, omfang og skarpere verber."
 
 #: src/libs/locale.ts
 msgid "Finnish"
@@ -1562,10 +1647,13 @@ msgstr "Gå til..."
 msgid "Google"
 msgstr "Google"
 
-#. AI provider option label in dashboard AI settings
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Google Gemini"
 msgstr "Google Gemini"
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "gpt-4.1"
+msgstr "gpt-4.1"
 
 #: src/dialogs/resume/sections/education.tsx
 msgid "Grade"
@@ -1699,6 +1787,10 @@ msgstr "Hvordan bruger jeg API'et?"
 msgid "How is my data protected?"
 msgstr "Hvordan bliver mine data beskyttet?"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "https://gateway.example.com/v1"
+msgstr "https://gateway.example.com/v1"
+
 #: src/libs/locale.ts
 msgid "Hungarian"
 msgstr "Ungarsk"
@@ -1707,6 +1799,10 @@ msgstr "Ungarsk"
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Icon"
 msgstr "Ikon"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Identify gaps for an applicant tracking system and apply only high-confidence keyword improvements."
+msgstr "Identificer mangler i et ansøgersporingssystem, og anvend kun forbedrede søgeord med høj sikkerhed."
 
 #: src/dialogs/resume/import.tsx
 msgid "Import"
@@ -1725,6 +1821,10 @@ msgstr "Importerer dit CV..."
 #: src/dialogs/resume/import.tsx
 msgid "Importing..."
 msgstr "Importerer..."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Increase zoom"
+msgstr "Øg zoom"
 
 #: src/libs/locale.ts
 msgid "Indonesian"
@@ -1758,10 +1858,9 @@ msgstr "Integrationer"
 msgid "Interests"
 msgstr "Interesser"
 
-#. Error shown when AI provider credentials or base URL are invalid in AI settings
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Invalid AI provider configuration. Please check your settings."
-msgstr "Ugyldig konfiguration af AI-udbyder. Tjek venligst dine indstillinger."
+msgid "Invalid AI provider configuration."
+msgstr "Ugyldig AI-udbyderkonfiguration."
 
 #: src/routes/_home/-sections/faq.tsx
 msgid "Is Reactive Resume available in multiple languages?"
@@ -1825,6 +1924,10 @@ msgstr "Lige margener"
 msgid "Kannada"
 msgstr "Kannada"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Key"
+msgstr "Nøgle"
+
 #: src/dialogs/resume/sections/interest.tsx
 #: src/dialogs/resume/sections/skill.tsx
 msgid "Keywords"
@@ -1840,6 +1943,7 @@ msgstr "Koreansk"
 
 #. Short field label for custom display text associated with a URL
 #: src/components/input/url-input.tsx
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Label"
 msgstr "Label"
 
@@ -1960,9 +2064,27 @@ msgstr "Liste"
 msgid "Lithuanian"
 msgstr "Litauisk"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Loading agent workspace..."
+msgstr "Indlæser agentens arbejdsområde..."
+
+#: src/dialogs/resume/import.tsx
+msgid "Loading AI providers. Please try again in a moment."
+msgstr "Indlæser AI-udbydere. Prøv igen om et øjeblik."
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Loading providers..."
+msgstr "Indlæser udbydere..."
+
 #: src/components/command-palette/pages/resumes.tsx
+#: src/routes/agent/-components/new-thread-setup.tsx
 msgid "Loading resumes..."
 msgstr "Indlæser CV'er..."
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+msgid "Loading threads..."
+msgstr "Indlæser tråde..."
 
 #: src/components/layout/loading-screen.tsx
 msgid "Loading..."
@@ -2011,6 +2133,10 @@ msgstr "Hovedafsnit"
 msgid "Main navigation"
 msgstr "Hovednavigation"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Make the experience section more results-oriented and remove vague responsibilities."
+msgstr "Gør erfaringssektionen mere resultatorienteret og fjern vage ansvarsområder."
+
 #: src/libs/locale.ts
 msgid "Malay"
 msgstr "Malajisk"
@@ -2041,13 +2167,13 @@ msgstr "Medium"
 msgid "Microsoft Word"
 msgstr "Microsoft Word"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Missing working resume"
+msgstr "Mangler arbejds-CV"
+
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Model"
 msgstr "Model"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "More proposal actions"
-msgstr "Flere forslagshandlinger"
 
 #: src/routes/builder/$resumeId/-sidebar/left/shared/section-item.tsx
 msgid "Move to"
@@ -2074,10 +2200,6 @@ msgstr "Skal starte med https://"
 #: src/routes/dashboard/settings/profile.tsx
 msgid "Name"
 msgstr "Navn"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Needs review"
-msgstr "Skal gennemgås"
 
 #: src/libs/locale.ts
 msgid "Nepali"
@@ -2109,9 +2231,9 @@ msgstr "Ny adgangskode"
 msgid "New Section"
 msgstr "Nyt afsnit"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Next"
-msgstr "Næste"
+#: src/routes/agent/-components/thread-sidebar.tsx
+msgid "New thread"
+msgstr "Ny tråd"
 
 #: src/routes/_home/-sections/features.tsx
 msgid "No Advertising, No Tracking"
@@ -2130,6 +2252,14 @@ msgstr "Ingen nøgler registreret endnu."
 msgid "No results found."
 msgstr "Ingen resultater fundet."
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "No tested provider"
+msgstr "Ingen testet udbyder"
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+msgid "No threads yet."
+msgstr "Ingen tråde endnu."
+
 #: src/libs/locale.ts
 msgid "Norwegian"
 msgstr "Norsk"
@@ -2142,7 +2272,6 @@ msgstr "Noter"
 msgid "Odia"
 msgstr "Odia"
 
-#. AI provider option label in dashboard AI settings
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Ollama"
 msgstr "Ollama"
@@ -2163,17 +2292,17 @@ msgid "Open"
 msgstr "Åbn"
 
 #: src/routes/builder/$resumeId/-components/dock.tsx
-msgid "Open AI assistant"
-msgstr "Åbn AI-assistent"
+msgid "Open AI agent"
+msgstr "Åben AI-agent"
 
 #. Button label to open the user's default email app
 #: src/routes/auth/forgot-password.tsx
 msgid "Open Email Client"
 msgstr "Åbn e-mailklient"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Open Integrations"
-msgstr "Åbne integrationer"
+#: src/routes/agent/$threadId.tsx
+msgid "Open in builder"
+msgstr "Åbn i builderen"
 
 #: src/routes/builder/$resumeId/-sidebar/right/sections/resume-analysis.tsx
 msgid "Open Integrations Settings"
@@ -2183,12 +2312,14 @@ msgstr "Åbn indstillinger for integrationer"
 msgid "Open Source"
 msgstr "Open source"
 
-#. AI provider option label in dashboard AI settings
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "OpenAI"
 msgstr "OpenAI"
 
-#. AI provider option label in dashboard AI settings
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "OpenAI-compatible"
+msgstr "OpenAI-kompatibel"
+
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "OpenRouter"
 msgstr "OpenRouter"
@@ -2287,6 +2418,30 @@ msgstr "Adgangskodebeskyttelse er blevet deaktiveret."
 msgid "Password protection has been enabled."
 msgstr "Adgangskodebeskyttelse er blevet aktiveret."
 
+#: src/routes/agent/$threadId.tsx
+msgid "Patch applied"
+msgstr "Programrettelse anvendt"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Patch conflicted"
+msgstr "Patch-konflikt"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Patch failed"
+msgstr "Programrettelsen mislykkedes"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Patch pending"
+msgstr "Afventer programrettelse"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Patch reverted"
+msgstr "Programrettelse tilbageført"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Patch reverted."
+msgstr "Programrettelsen er tilbageført."
+
 #. File format label in import source selector
 #: src/dialogs/resume/import.tsx
 msgid "PDF"
@@ -2333,6 +2488,7 @@ msgid "Please support the project"
 msgstr "Støt venligst projektet"
 
 #: src/routes/$username/-components/public-resume.tsx
+#: src/routes/agent/$threadId.tsx
 #: src/routes/builder/$resumeId/-components/dock.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
 msgid "Please wait while your PDF is being generated..."
@@ -2367,9 +2523,9 @@ msgstr "Stilling"
 msgid "Preferences"
 msgstr "Præferencer"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Preparing changes"
-msgstr "Forbereder ændringer"
+#: src/routes/agent/$threadId.tsx
+msgid "Prepare a conservative patch that improves clarity without changing my career narrative."
+msgstr "Forbered en konservativ opdatering, der forbedrer klarheden uden at ændre min karrierefortælling."
 
 #: src/components/input/color-picker.tsx
 msgid "Presets"
@@ -2383,10 +2539,6 @@ msgstr "Tryk på <0>{RETURN_KEY}</0> eller <1>{COMMA_KEY}</1> for at tilføje el
 #: src/components/command-palette/pages/resumes.tsx
 msgid "Press <0>Enter</0> to open"
 msgstr "Tryk på <0>Enter</0> for at åbne"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Prev"
-msgstr "Forrige"
 
 #: src/routes/builder/$resumeId/-sidebar/right/sections/design.tsx
 msgid "Primary Color"
@@ -2418,11 +2570,6 @@ msgstr "Statuslinje"
 msgid "Projects"
 msgstr "Projekter"
 
-#. placeholder {0}: index + 1
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Proposal {0} of {total}"
-msgstr "Forslag {0} af {total}"
-
 #: src/routes/builder/$resumeId/-sidebar/right/sections/sharing.tsx
 msgid "Protect your resume from unauthorized access with a password"
 msgstr "Beskyt dit CV mod uautoriseret adgang med en adgangskode"
@@ -2435,6 +2582,10 @@ msgstr "Beskyt dit CV med en adgangskode, og lad kun personer med adgangskoden s
 msgid "Provider"
 msgstr "Udbyder"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Provider connection verified."
+msgstr "Udbyderforbindelse bekræftet."
+
 #: src/dialogs/resume/sections/custom.tsx
 #: src/libs/resume/section-title.ts
 #: src/libs/resume/section.tsx
@@ -2444,10 +2595,6 @@ msgstr "Publikationer"
 #: src/dialogs/resume/sections/publication.tsx
 msgid "Publisher"
 msgstr "Udgiver"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Raw JSON Patch"
-msgstr "Rå JSON-patch"
 
 #: src/routes/_home/-sections/header.tsx
 msgid "Reactive Resume - Go to homepage"
@@ -2514,18 +2661,6 @@ msgstr "Opdater"
 msgid "Register New Device"
 msgstr "Registrer ny enhed"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Reject"
-msgstr "Afvise"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Reject all"
-msgstr "Afvis alle"
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Rejected proposal"
-msgstr "Afvist forslag"
-
 #: src/routes/auth/forgot-password.tsx
 msgid "Remember your password? <0/>"
 msgstr "Husker du din adgangskode? <0/>"
@@ -2576,10 +2711,6 @@ msgstr "Gensender bekræftelsesmail..."
 msgid "Reset"
 msgstr "Nulstil"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Reset chat"
-msgstr "Nulstil chatten"
-
 #. Primary action button label on reset-password form
 #: src/routes/auth/reset-password.tsx
 msgid "Reset Password"
@@ -2593,13 +2724,13 @@ msgstr "Nulstil din adgangskode"
 msgid "Resetting your password..."
 msgstr "Nulstiller din adgangskode..."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Resize AI assistant"
-msgstr "Ændre størrelse på AI-assistenten"
-
 #: src/routes/_home/-sections/footer.tsx
 msgid "Resources"
 msgstr "Ressourcer"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Resume"
+msgstr "Genoptage"
 
 #: src/libs/resume/section.tsx
 msgid "Resume Analysis"
@@ -2609,6 +2740,10 @@ msgstr "CV-analyse"
 msgid "Resume analysis complete."
 msgstr "CV-analysen er færdig."
 
+#: src/routes/agent/$threadId.tsx
+msgid "Resume patch"
+msgstr "CV-patch"
+
 #: src/components/command-palette/pages/navigation.tsx
 #: src/components/command-palette/pages/resumes.tsx
 #: src/routes/_home/-sections/statistics.tsx
@@ -2617,13 +2752,25 @@ msgstr "CV-analysen er færdig."
 msgid "Resumes"
 msgstr "CV'er"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Review required"
-msgstr "Gennemgang påkrævet"
+#: src/routes/agent/$threadId.tsx
+msgid "Retry"
+msgstr "Prøv igen"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Reviewed proposals"
-msgstr "Gennemgåede forslag"
+#: src/routes/agent/$threadId.tsx
+msgid "Revert"
+msgstr "Vende tilbage"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Review the resume against a job description and ask me questions before changing uncertain sections."
+msgstr "Gennemgå CV'et i forhold til en jobbeskrivelse, og stil mig spørgsmål, før du ændrer usikre afsnit."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Rework the summary so it targets a senior engineering manager role without sounding generic."
+msgstr "Omarbejd resuméet, så det er målrettet en stilling som senioringeniør uden at lyde generisk."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Rewrite this resume for a startup founder-to-product-lead transition with clear business impact."
+msgstr "Omskriv dette CV til en overgang fra startup-grundlægger til produktleder med klar forretningsmæssig effekt."
 
 #: src/components/input/rich-input.tsx
 msgid "Right Align"
@@ -2674,6 +2821,10 @@ msgstr "Gemme"
 msgid "Save Changes"
 msgstr "Gem ændringer"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Save Provider"
+msgstr "Gem udbyder"
+
 #: src/dialogs/auth/enable-two-factor.tsx
 msgid "Scan the QR code below with your preferred authenticator app. You can also copy the secret below and paste it into your app."
 msgstr "Scan QR-koden nedenfor med din foretrukne godkendelsesapp. Du kan også kopiere hemmeligheden nedenfor og indsætte den i din app."
@@ -2715,6 +2866,26 @@ msgstr "Hemmelighed kopieret til udklipsholderen."
 msgid "Section Type"
 msgstr "Afsnitstype"
 
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Select a resume"
+msgstr "Vælg et CV"
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Select a tested provider"
+msgstr "Vælg en testet udbyder"
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Select a tested provider before starting a thread."
+msgstr "Vælg en testet udbyder, før du starter en tråd."
+
+#: src/routes/agent/index.tsx
+msgid "Select a thread"
+msgstr "Vælg en tråd"
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Select an agent model"
+msgstr "Vælg en agentmodel"
+
 #: src/components/ui/combobox.tsx
 msgid "Select..."
 msgstr "Vælg..."
@@ -2723,9 +2894,9 @@ msgstr "Vælg..."
 msgid "Self-Host with Docker"
 msgstr "Selvhostning med Docker"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Send"
-msgstr "Sende"
+#: src/routes/agent/$threadId.tsx
+msgid "Send message"
+msgstr "Send besked"
 
 #. Primary action button label on forgot-password form
 #: src/routes/auth/forgot-password.tsx
@@ -2735,10 +2906,6 @@ msgstr "Send e-mail til nulstilling af adgangskode"
 #: src/routes/auth/forgot-password.tsx
 msgid "Sending password reset email..."
 msgstr "Sender e-mail til nulstilling af adgangskode..."
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Sending request"
-msgstr "Sender anmodning"
 
 #: src/components/input/rich-input.tsx
 msgid "Separator"
@@ -2754,6 +2921,7 @@ msgid "Set Password"
 msgstr "Angiv adgangskode"
 
 #: src/components/command-palette/pages/navigation.tsx
+#: src/routes/agent/-components/new-thread-setup.tsx
 #: src/routes/dashboard/-components/sidebar.tsx
 msgid "Settings"
 msgstr "Indstillinger"
@@ -2965,6 +3133,14 @@ msgstr "Giv os en stjerne på GitHub (åbner i ny fane)"
 msgid "Star us on GitHub, currently {0} stars (opens in new tab)"
 msgstr "Giv os en stjerne på GitHub, pt. {0} stjerner (åbner i ny fane)"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Start a new thread"
+msgstr "Start en ny tråd"
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Start a thread"
+msgstr "Start en tråd"
+
 #: src/dialogs/resume/index.tsx
 msgid "Start building your resume by giving it a name."
 msgstr "Begynd at opbygge dit CV ved at give det et navn."
@@ -2974,6 +3150,14 @@ msgstr "Begynd at opbygge dit CV ved at give det et navn."
 msgid "Start building your resume from scratch"
 msgstr "Begynd at opbygge dit CV helt fra bunden"
 
+#: src/routes/agent/index.tsx
+msgid "Start new thread"
+msgstr "Start en ny tråd"
+
+#: src/routes/agent/-components/new-thread-setup.tsx
+msgid "Start Thread"
+msgstr "Start tråd"
+
 #: src/libs/resume/section.tsx
 msgid "Statistics"
 msgstr "Statistik"
@@ -2982,9 +3166,9 @@ msgstr "Statistik"
 msgid "Stay"
 msgstr "Bliv"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "Stop"
-msgstr "Stop"
+#: src/routes/agent/$threadId.tsx
+msgid "Stop generation"
+msgstr "Stop generation"
 
 #: src/routes/builder/$resumeId/-sidebar/right/sections/resume-analysis.tsx
 msgid "Strengths"
@@ -3043,6 +3227,10 @@ msgstr "Tags"
 msgid "Tags can be used to categorize your resume by keywords."
 msgstr "Tags kan bruges til at kategorisere dit CV efter nøgleord."
 
+#: src/routes/agent/$threadId.tsx
+msgid "Tailor this resume to a product manager job description and emphasize roadmap ownership, stakeholder communication, and measurable launch outcomes."
+msgstr "Tilpas dette CV til en jobbeskrivelse for produktchefer, og læg vægt på ejerskab til roadmapen, kommunikation med interessenter og målbare lanceringsresultater."
+
 #: src/libs/locale.ts
 msgid "Tamil"
 msgstr "Tamil"
@@ -3064,8 +3252,12 @@ msgid "Templates"
 msgstr "Skabeloner"
 
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Test Connection"
-msgstr "Test forbindelse"
+msgid "Test"
+msgstr "Prøve"
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Tested"
+msgstr "Testet"
 
 #: src/routes/_home/-sections/testimonials.tsx
 msgid "Testimonials"
@@ -3080,13 +3272,9 @@ msgstr "Tekstfarve"
 msgid "Thai"
 msgstr "Thai"
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "The AI proposed a change that no longer applies to this resume."
-msgstr "AI'en har foreslået en ændring, der ikke længere gælder for dette CV."
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "The AI returned a proposal that could not be previewed."
-msgstr "AI'en returnerede et forslag, der ikke kunne forhåndsvises."
+#: src/routes/agent/$threadId.tsx
+msgid "The agent needs your input."
+msgstr "Agenten har brug for din input."
 
 #. Error description when AI returns invalid resume analysis format
 #: src/routes/builder/$resumeId/-sidebar/right/sections/resume-analysis.tsx
@@ -3100,10 +3288,6 @@ msgstr "API-nøglen er blevet slettet."
 #: src/routes/dashboard/settings/api-keys.tsx
 msgid "The API key will no longer be able to access your data after deletion. This action cannot be undone."
 msgstr "API-nøglen vil ikke længere kunne få adgang til dine data efter sletning. Denne handling kan ikke fortrydes."
-
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "The assistant stopped before returning a proposal."
-msgstr "Assistenten stoppede, før han gentog et forslag."
 
 #. Empty-state message when no command palette results match the search query
 #: src/components/command-palette/index.tsx
@@ -3127,6 +3311,10 @@ msgstr "Det CV, du prøver at få adgang til, er beskyttet af en adgangskode"
 msgid "The URL you entered is not valid."
 msgstr "Den URL, du indtastede, er ikke gyldig."
 
+#: src/routes/agent/$threadId.tsx
+msgid "The working resume was deleted. This thread is read-only."
+msgstr "Arbejds-CV'et blev slettet. Denne tråd er skrivebeskyttet."
+
 #. Menu item that opens appearance theme selection submenu
 #: src/components/command-palette/pages/preferences/theme.tsx
 #: src/components/user/dropdown-menu.tsx
@@ -3144,10 +3332,15 @@ msgid "There was a problem while generating the DOCX, please try again."
 msgstr "Der opstod et problem under genereringen af DOCX'en, prøv venligst igen."
 
 #: src/routes/$username/-components/public-resume.tsx
+#: src/routes/agent/$threadId.tsx
 #: src/routes/builder/$resumeId/-components/dock.tsx
 #: src/routes/builder/$resumeId/-sidebar/right/sections/export.tsx
 msgid "There was a problem while generating the PDF, please try again."
 msgstr "Der opstod et problem under generering af PDF-filen. Prøv igen."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Thinking"
+msgstr "Tænkning"
 
 #: src/routes/builder/$resumeId/-components/header.tsx
 #: src/routes/dashboard/resumes/-components/menus/context-menu.tsx
@@ -3159,9 +3352,21 @@ msgstr "Denne handling kan ikke fortrydes."
 msgid "This action cannot be undone. All your data will be permanently deleted."
 msgstr "Denne handling kan ikke fortrydes. Alle dine data vil blive slettet permanent."
 
+#: src/routes/agent/$threadId.tsx
+msgid "This action cannot be undone. Conversation messages and uploaded attachments will be removed. The working resume draft remains in your dashboard and can be deleted separately."
+msgstr "Denne handling kan ikke fortrydes. Samtalebeskeder og uploadede vedhæftede filer vil blive fjernet. Udkastet til dit CV forbliver i dit dashboard og kan slettes separat."
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+msgid "This action cannot be undone. Messages and thread attachments will be removed."
+msgstr "Denne handling kan ikke fortrydes. Beskeder og vedhæftede filer i tråde vil blive fjernet."
+
+#: src/routes/agent/$threadId.tsx
+msgid "This agent thread could not be opened."
+msgstr "Denne agenttråd kunne ikke åbnes."
+
 #: src/dialogs/resume/import.tsx
-msgid "This feature requires AI Integration to be enabled. Please enable it in the settings."
-msgstr "Denne funktion kræver, at AI-integration er aktiveret. Aktivér den venligst i indstillingerne."
+msgid "This feature requires a tested AI provider. Please add one in the settings."
+msgstr "Denne funktion kræver en testet AI-udbyder. Tilføj venligst en i indstillingerne."
 
 #: src/dialogs/resume/index.tsx
 msgid "This is a URL-friendly name for your resume."
@@ -3171,12 +3376,7 @@ msgstr "Dette er et URL-venligt navn til dit CV."
 msgid "This may take a few minutes, depending on the response of the AI provider. Please do not close the window or refresh the page."
 msgstr "Dette kan tage et par minutter afhængigt af svaret fra AI-udbyderen. Luk venligst ikke vinduet og genindlæs ikke siden."
 
-#: src/routes/builder/$resumeId/-components/assistant.tsx
-msgid "This proposal is stale. Ask the assistant to regenerate it from the latest resume."
-msgstr "Dette forslag er forældet. Bed assistenten om at generere det fra det seneste CV."
-
 #: src/components/resume/builder-resume-draft.ts
-#: src/routes/builder/$resumeId/-components/assistant.tsx
 msgid "This resume is locked and cannot be updated."
 msgstr "Dette CV er låst og kan ikke opdateres."
 
@@ -3187,6 +3387,18 @@ msgstr "Dette afsnit er reserveret til dine personlige noter, der er specifikke 
 #: src/routes/auth/register.tsx
 msgid "This step is optional, but recommended."
 msgstr "Dette trin er valgfrit, men anbefales."
+
+#: src/routes/agent/$threadId.tsx
+msgid "This thread is archived. New messages cannot be sent."
+msgstr "Denne tråd er arkiveret. Nye beskeder kan ikke sendes."
+
+#: src/routes/agent/$threadId.tsx
+msgid "This thread is read-only"
+msgstr "Denne tråd er skrivebeskyttet"
+
+#: src/routes/agent/$threadId.tsx
+msgid "This thread is read-only because the working resume or AI provider is unavailable."
+msgstr "Denne tråd er skrivebeskyttet, fordi det fungerende CV eller AI-udbyderen ikke er tilgængelig."
 
 #: src/dialogs/api-key/create.tsx
 msgid "This will generate a new API key to access the Reactive Resume API to allow machines to interact with your resume data."
@@ -3199,6 +3411,28 @@ msgstr "Det vil hjælpe dig med at identificere den senere, hvis du planlægger 
 #: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
 msgid "This will remove all items from this section."
 msgstr "Dette vil fjerne alle elementer fra denne sektion."
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
+msgid "Thread actions"
+msgstr "Trådhandlinger"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Thread archived."
+msgstr "Tråd arkiveret."
+
+#: src/routes/agent/$threadId.tsx
+msgid "Thread deleted."
+msgstr "Tråd slettet."
+
+#: src/routes/agent/-components/thread-sidebar.tsx
+#: src/routes/agent/$threadId.tsx
+msgid "Threads"
+msgstr "Tråde"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Tighten the skills section so it supports the target role instead of reading like a keyword dump."
+msgstr "Stram færdighedsafsnittet, så det understøtter målrollen i stedet for at blive læst som en søgeordsdump."
 
 #: src/routes/_home/-sections/hero.tsx
 msgid "Timelapse demonstration of building a resume with Reactive Resume"
@@ -3232,10 +3466,18 @@ msgstr "Skift til venstre sidepanel"
 msgid "Toggle page stacking"
 msgstr "Slå sidestabling til/fra"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Toggle resume preview"
+msgstr "Slå forhåndsvisning af CV til/fra"
+
 #. Screen-reader label for opening or closing the right sidebar in resume builder
 #: src/routes/builder/$resumeId/-components/header.tsx
 msgid "Toggle right sidebar"
 msgstr "Skift til højre sidepanel"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Toggle threads"
+msgstr "Slå tråde til/fra"
 
 #: src/routes/builder/$resumeId/-sidebar/right/sections/statistics.tsx
 msgid "Track your resume's views and downloads"
@@ -3357,6 +3599,10 @@ msgstr "Lås op"
 msgid "Unnamed passkey"
 msgstr "Ikke navngivet adgangskode"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Untested"
+msgstr "Uafprøvet"
+
 #: src/routes/dashboard/settings/profile.tsx
 msgid "Unverified"
 msgstr "Ikke verificeret"
@@ -3437,6 +3683,10 @@ msgstr "Opdater en eksisterende frivillig erfaring"
 msgid "Update Password"
 msgstr "Opdater adgangskode"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Update project bullets to show leadership, constraints, tradeoffs, and measurable outcomes."
+msgstr "Opdater projektets punktlister for at vise lederskab, begrænsninger, afvejninger og målbare resultater."
+
 #: src/dialogs/resume/index.tsx
 msgid "Update Resume"
 msgstr "Opdater CV"
@@ -3467,6 +3717,10 @@ msgstr "Uploader billede..."
 msgid "URL"
 msgstr "URL"
 
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Use"
+msgstr "Bruge"
+
 #: src/components/input/color-picker.tsx
 msgid "Use color {color}"
 msgstr "Brug farve {color}"
@@ -3490,7 +3744,6 @@ msgstr "Usbekisk"
 msgid "Valid URLs must start with http:// or https://."
 msgstr "Gyldige URL'er skal starte med http:// eller https://."
 
-#. AI provider option label in dashboard AI settings
 #: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
 msgid "Vercel AI Gateway"
 msgstr "Vercel AI Gateway"
@@ -3541,6 +3794,10 @@ msgstr "Visninger"
 msgid "Volunteer"
 msgstr "Frivillig"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Waiting for fetch result..."
+msgstr "Venter på hentningsresultat..."
+
 #: src/dialogs/resume/sections/award.tsx
 #: src/dialogs/resume/sections/certification.tsx
 #: src/dialogs/resume/sections/education.tsx
@@ -3553,6 +3810,10 @@ msgstr "Frivillig"
 #: src/routes/builder/$resumeId/-sidebar/left/sections/basics.tsx
 msgid "Website"
 msgstr "Hjemmeside"
+
+#: src/routes/agent/$threadId.tsx
+msgid "What do you want to do?"
+msgstr "Hvad vil du gøre?"
 
 #: src/routes/builder/$resumeId/-sidebar/left/shared/section-menu.tsx
 msgid "What do you want to rename this section to?"
@@ -3571,6 +3832,14 @@ msgstr "Hvad er nyt i den seneste version?"
 #: src/routes/dashboard/resumes/-components/menus/dropdown-menu.tsx
 msgid "When locked, the resume cannot be updated or deleted."
 msgstr "Når det er låst, kan CV'et ikke opdateres eller slettes."
+
+#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
+msgid "Work OpenAI"
+msgstr "Arbejd med OpenAI"
+
+#: src/routes/agent/$threadId.tsx
+msgid "Working..."
+msgstr "Arbejder..."
 
 #: src/routes/_home/-sections/footer.tsx
 msgid "X (Twitter)"
@@ -3620,10 +3889,6 @@ msgstr "Dine ændringer gemmes automatisk."
 #: src/routes/_home/-sections/features.tsx
 msgid "Your data is secure, and never shared or sold to anyone."
 msgstr "Dine data er sikre og bliver aldrig delt eller solgt til nogen."
-
-#: src/routes/dashboard/settings/integrations/-components/ai-section.tsx
-msgid "Your data is stored locally"
-msgstr "Dine data gemmes lokalt"
 
 #: src/routes/_home/-sections/faq.tsx
 msgid "Your data is stored securely and is never shared with third parties. You can also self-host Reactive Resume on your own servers for complete control over your data."
@@ -3679,6 +3944,10 @@ msgstr "Din støtte sikrer, at projektet forbliver gratis og tilgængeligt for a
 msgid "Zoom in"
 msgstr "Zoom ind"
 
+#: src/routes/agent/$threadId.tsx
+msgid "Zoom level"
+msgstr "Zoomniveau"
+
 #: src/routes/builder/$resumeId/-components/dock.tsx
 msgid "Zoom out"
 msgstr "Zoom ud"
@@ -3686,4 +3955,3 @@ msgstr "Zoom ud"
 #: src/libs/locale.ts
 msgid "Zulu"
 msgstr "Zulu"
-

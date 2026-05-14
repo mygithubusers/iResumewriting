@@ -22,7 +22,7 @@
 		"@ai-sdk/google": "^3.0.73",
 		"@ai-sdk/openai": "^3.0.63",
 		"@ai-sdk/openai-compatible": "^2.0.47",
-		"@aws-sdk/client-s3": "^3.1045.0",
+		"@aws-sdk/client-s3": "^3.1046.0",
 		"@mozilla/readability": "^0.6.0",
 		"@orpc/client": "^1.14.3",
 		"@orpc/experimental-ratelimit": "^1.14.3",
@@ -54,7 +54,7 @@
 		"@reactive-resume/config": "workspace:*",
 		"@types/bcrypt": "^6.0.0",
 		"@types/jsdom": "^28.0.3",
-		"@typescript/native-preview": "7.0.0-dev.20260513.1",
+		"@typescript/native-preview": "7.0.0-dev.20260514.1",
 		"typescript": "^6.0.3"
 	}
 }
