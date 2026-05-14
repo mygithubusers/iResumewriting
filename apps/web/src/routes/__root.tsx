@@ -44,6 +44,17 @@ const title = `${appName} — ${tagline}`;
 const description =
 	"Reactive Resume is a free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.";
 
+const mapGetOrInsertComputedPolyfill = `
+	if (!Map.prototype.getOrInsertComputed) {
+		Map.prototype.getOrInsertComputed = function (key, callbackFn) {
+			if (this.has(key)) return this.get(key);
+			const value = callbackFn(key);
+			this.set(key, value);
+			return value;
+		};
+	}
+`;
+
 export const Route = createRootRouteWithContext<RouterContext>()({
 	shellComponent: RootDocument,
 	head: () => {
@@ -77,7 +88,10 @@ export const Route = createRootRouteWithContext<RouterContext>()({
 				{ property: "og:description", content: description },
 				{ property: "og:url", content: appUrl },
 			],
-			scripts: import.meta.env.PROD ? [{ children: pwaServiceWorkerRegistrationScript }] : [],
+			scripts: [
+				{ children: mapGetOrInsertComputedPolyfill },
+				...(import.meta.env.PROD ? [{ children: pwaServiceWorkerRegistrationScript }] : []),
+			],
 		};
 	},
 	beforeLoad: async () => {
